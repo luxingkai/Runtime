@@ -1,14 +1,9 @@
 # Runtime
-<1>.runtime版本好和平台
-在遗留运行时中，如果更改类中实例变量的布局，则必须重新编译从其继承的类。
-在现代运行时中，如果更改类中实例变量的布局，则不必重新编译继承自该类的类。
-<2>.runtime交互
-Objective-C程序与运行时系统在三个不同的层次上进行交互:   
-通过Objective-C源代码;     
-通过在基础框架的NSObject类中定义的方法;      
-并通过直接调用运行时函数。   
-<3>.消息分发（objc_msgSend）
-
+获得对Objective-C运行时和Objective-C根类型的底层访问。
+Objective-C运行时模块api定义了Objective-C语言的基础。这些api包括:
+●   类型，如NSObject类和NSObject协议，提供了大多数Objective-C类的根功能
+●   组成Objective-C运行时的函数和数据结构，它为Objective-C语言的动态属性提供支持
+通常不需要直接使用此模块。
 
 
 

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ClassesViewController.h"
+#import "ProtocolsViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +22,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ViewController *vc = [ViewController new];
+    ProtocolsViewController *vc = [ProtocolsViewController new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
