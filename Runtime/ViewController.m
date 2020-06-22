@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#include <objc/runtime.h>
+#include <objc/objc.h>
+#include <objc/message.h>
 
 @interface ViewController ()
 
@@ -19,7 +22,8 @@
     
     self.view.backgroundColor = UIColor.whiteColor;
     
-    
+    SEL sel = @selector(start);
+    objc_msgSend(self, sel);
     
     
     // Do any additional setup after loading the view.
