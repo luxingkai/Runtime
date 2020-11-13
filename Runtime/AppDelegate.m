@@ -11,6 +11,14 @@
 #import "ClassesViewController.h"
 #import "ProtocolsViewController.h"
 
+
+//Runtime 官方文档
+//https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048-CH1-SW1
+
+//iOS开发文档
+//https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html
+
+
 @interface AppDelegate ()
 
 @end

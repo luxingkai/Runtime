@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 #include <objc/runtime.h>
 #include <objc/objc.h>
 #include <objc/message.h>
@@ -21,9 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = UIColor.whiteColor;
-    
     
     
     
