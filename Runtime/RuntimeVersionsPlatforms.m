@@ -49,8 +49,18 @@
      of the runtime.
      */
     
+    [self perform:@"dsf",@"sdf",@"aa",@"dd"];
     
+}
+
+- (void)perform:(NSString *)str1, ... {
     
+    va_list list;
+    va_start(list, str1);
+    NSString *str = va_arg(list, NSString *);
+    NSString *str_1 = va_arg(list, NSString *);
+    va_end(list);
+    NSLog(@"%@ %@",str, str_1);
 }
 
 /*

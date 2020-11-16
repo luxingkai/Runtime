@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
-
-
+#import "RuntimeVersionsPlatforms.h"
+#import "InteractWithRuntime.h"
+#import "Messaging.h"
+#import "DynamicMethodResolution.h"
+#import "MessageForwarding.h"
+#import "TypeEncodings.h"
+#import "DeclaredProperties.h"
 
 //Runtime 官方文档
 //https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048-CH1-SW1
@@ -28,7 +33,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ProtocolsViewController *vc = [ProtocolsViewController new];
+    RuntimeVersionsPlatforms *vc = [RuntimeVersionsPlatforms new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     

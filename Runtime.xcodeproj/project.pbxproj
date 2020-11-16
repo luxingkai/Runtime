@@ -17,6 +17,17 @@
 		119E09E424444ECD003FB6F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09E324444ECD003FB6F2 /* main.m */; };
 		119E09EE24444ECD003FB6F2 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09ED24444ECD003FB6F2 /* RuntimeTests.m */; };
 		119E09F924444ECD003FB6F2 /* RuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09F824444ECD003FB6F2 /* RuntimeUITests.m */; };
+		11D97F5B25622FB500781528 /* Messaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F5A25622FB500781528 /* Messaging.m */; };
+		11D97F5E25622FEC00781528 /* DynamicMethodResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F5D25622FEC00781528 /* DynamicMethodResolution.m */; };
+		11D97F612562300700781528 /* MessageForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F602562300700781528 /* MessageForwarding.m */; };
+		11D97F642562301700781528 /* TypeEncodings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F632562301700781528 /* TypeEncodings.m */; };
+		11D97F672562304F00781528 /* DeclaredProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F662562304F00781528 /* DeclaredProperties.m */; };
+		11D97F6925624A5200781528 /* messaging1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F6825624A5200781528 /* messaging1.gif */; };
+		11D97F6B2562809200781528 /* forwarding.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F6A2562809200781528 /* forwarding.gif */; };
+		11D97F6D256282D200781528 /* encoding.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F6C256282D200781528 /* encoding.png */; };
+		11D97F6F2562837600781528 /* methodEncoding.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F6E2562837600781528 /* methodEncoding.png */; };
+		11D97F712562852100781528 /* propertyTypeEncoding.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F702562852100781528 /* propertyTypeEncoding.png */; };
+		11D97F732562858F00781528 /* PropertyAttributeDescriptionExamples.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +67,22 @@
 		119E09F424444ECD003FB6F2 /* RuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119E09F824444ECD003FB6F2 /* RuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUITests.m; sourceTree = "<group>"; };
 		119E09FA24444ECD003FB6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D97F5925622FB500781528 /* Messaging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Messaging.h; sourceTree = "<group>"; };
+		11D97F5A25622FB500781528 /* Messaging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Messaging.m; sourceTree = "<group>"; };
+		11D97F5C25622FEC00781528 /* DynamicMethodResolution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMethodResolution.h; sourceTree = "<group>"; };
+		11D97F5D25622FEC00781528 /* DynamicMethodResolution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicMethodResolution.m; sourceTree = "<group>"; };
+		11D97F5F2562300700781528 /* MessageForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwarding.h; sourceTree = "<group>"; };
+		11D97F602562300700781528 /* MessageForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwarding.m; sourceTree = "<group>"; };
+		11D97F622562301700781528 /* TypeEncodings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeEncodings.h; sourceTree = "<group>"; };
+		11D97F632562301700781528 /* TypeEncodings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeEncodings.m; sourceTree = "<group>"; };
+		11D97F652562304F00781528 /* DeclaredProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeclaredProperties.h; sourceTree = "<group>"; };
+		11D97F662562304F00781528 /* DeclaredProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeclaredProperties.m; sourceTree = "<group>"; };
+		11D97F6825624A5200781528 /* messaging1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = messaging1.gif; sourceTree = "<group>"; };
+		11D97F6A2562809200781528 /* forwarding.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = forwarding.gif; sourceTree = "<group>"; };
+		11D97F6C256282D200781528 /* encoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = encoding.png; sourceTree = "<group>"; };
+		11D97F6E2562837600781528 /* methodEncoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = methodEncoding.png; sourceTree = "<group>"; };
+		11D97F702562852100781528 /* propertyTypeEncoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = propertyTypeEncoding.png; sourceTree = "<group>"; };
+		11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PropertyAttributeDescriptionExamples.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +139,22 @@
 				1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */,
 				1162AB96255FD3F200D6D099 /* InteractWithRuntime.h */,
 				1162AB97255FD3F200D6D099 /* InteractWithRuntime.m */,
+				11D97F5925622FB500781528 /* Messaging.h */,
+				11D97F5A25622FB500781528 /* Messaging.m */,
+				11D97F5C25622FEC00781528 /* DynamicMethodResolution.h */,
+				11D97F5D25622FEC00781528 /* DynamicMethodResolution.m */,
+				11D97F5F2562300700781528 /* MessageForwarding.h */,
+				11D97F602562300700781528 /* MessageForwarding.m */,
+				11D97F622562301700781528 /* TypeEncodings.h */,
+				11D97F632562301700781528 /* TypeEncodings.m */,
+				11D97F652562304F00781528 /* DeclaredProperties.h */,
+				11D97F662562304F00781528 /* DeclaredProperties.m */,
+				11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */,
+				11D97F702562852100781528 /* propertyTypeEncoding.png */,
+				11D97F6E2562837600781528 /* methodEncoding.png */,
+				11D97F6C256282D200781528 /* encoding.png */,
+				11D97F6825624A5200781528 /* messaging1.gif */,
+				11D97F6A2562809200781528 /* forwarding.gif */,
 				119E09DA24444ECB003FB6F2 /* Main.storyboard */,
 				119E09DD24444ECD003FB6F2 /* Assets.xcassets */,
 				119E09DF24444ECD003FB6F2 /* LaunchScreen.storyboard */,
@@ -245,7 +288,13 @@
 			files = (
 				119E09E124444ECD003FB6F2 /* LaunchScreen.storyboard in Resources */,
 				119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */,
+				11D97F6F2562837600781528 /* methodEncoding.png in Resources */,
 				11142B8924A04D890004B482 /* README.md in Resources */,
+				11D97F6B2562809200781528 /* forwarding.gif in Resources */,
+				11D97F6925624A5200781528 /* messaging1.gif in Resources */,
+				11D97F712562852100781528 /* propertyTypeEncoding.png in Resources */,
+				11D97F6D256282D200781528 /* encoding.png in Resources */,
+				11D97F732562858F00781528 /* PropertyAttributeDescriptionExamples.png in Resources */,
 				119E09DC24444ECB003FB6F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +321,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				119E09D324444ECB003FB6F2 /* AppDelegate.m in Sources */,
+				11D97F612562300700781528 /* MessageForwarding.m in Sources */,
 				119E09E424444ECD003FB6F2 /* main.m in Sources */,
+				11D97F5E25622FEC00781528 /* DynamicMethodResolution.m in Sources */,
+				11D97F5B25622FB500781528 /* Messaging.m in Sources */,
 				1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */,
+				11D97F642562301700781528 /* TypeEncodings.m in Sources */,
+				11D97F672562304F00781528 /* DeclaredProperties.m in Sources */,
 				1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
