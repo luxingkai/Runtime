@@ -29,11 +29,11 @@
      type such as an int, a pointer, a tagged structure or union,
      or a class name—any type, in fact, that can be used as an
      argument to the C sizeof() operator.
-
+     =================================================
      char *buf1 = @encode(int **);
      char *buf2 = @encode(struct key);
      char *buf3 = @encode(Rectangle);
-     
+     =================================================
      The table below lists the type codes. Note that many of them
      overlap with the codes you use when encoding an object
      for purposes of archiving or distribution. However,
@@ -60,15 +60,15 @@
      parentheses. The structure tag is listed first, followed
      by an equal sign and the codes for the fields of the structure
      listed in sequence. For example, the structure
-
+     ====================================================
      typedef struct example {
          id   anObject;
          char *aString;
          int  anInt;
      } Example;
-     
+     ====================================================
      would be encoded like this:
-
+     
      {example=@*i}
      The same encoding results whether the defined type name (Example)
      or the structure tag (example) is passed to @encode(). The
@@ -78,7 +78,7 @@
      ^{example=@*i}
      However, another level of indirection removes the internal type
      specification:
-
+     
      ^^{example}
      Objects are treated like structures. For example, passing the
      NSObject class name to @encode() yields this encoding:

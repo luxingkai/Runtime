@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		11142B8924A04D890004B482 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11142B8824A04D890004B482 /* README.md */; };
+		114CE82F2563709C00179FC2 /* KeyValueCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE82E2563709C00179FC2 /* KeyValueCoding.m */; };
+		114CE83225637F1B00179FC2 /* CopingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE83125637F1B00179FC2 /* CopingController.m */; };
+		114CE8352563957900179FC2 /* ValueWrappersTransformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE8342563957900179FC2 /* ValueWrappersTransformations.m */; };
+		114CE8382563964100179FC2 /* Invocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE8372563964100179FC2 /* Invocations.m */; };
+		114CE83B25639C4E00179FC2 /* MemoryManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE83A25639C4E00179FC2 /* MemoryManagement.m */; };
+		114CE83E2563CD7B00179FC2 /* AdvancedMemoryManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */; };
+		114CE8402563CFFA00179FC2 /* memory_management_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE83F2563CFFA00179FC2 /* memory_management_2x.png */; };
+		114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE8412563F57800179FC2 /* retaincycles_2x.png */; };
 		1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */; };
 		1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB97255FD3F200D6D099 /* InteractWithRuntime.m */; };
 		119E09D324444ECB003FB6F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09D224444ECB003FB6F2 /* AppDelegate.m */; };
@@ -49,6 +57,20 @@
 
 /* Begin PBXFileReference section */
 		11142B8824A04D890004B482 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		114CE82D2563709C00179FC2 /* KeyValueCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueCoding.h; sourceTree = "<group>"; };
+		114CE82E2563709C00179FC2 /* KeyValueCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyValueCoding.m; sourceTree = "<group>"; };
+		114CE83025637F1B00179FC2 /* CopingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopingController.h; sourceTree = "<group>"; };
+		114CE83125637F1B00179FC2 /* CopingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopingController.m; sourceTree = "<group>"; };
+		114CE8332563957900179FC2 /* ValueWrappersTransformations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueWrappersTransformations.h; sourceTree = "<group>"; };
+		114CE8342563957900179FC2 /* ValueWrappersTransformations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueWrappersTransformations.m; sourceTree = "<group>"; };
+		114CE8362563964100179FC2 /* Invocations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invocations.h; sourceTree = "<group>"; };
+		114CE8372563964100179FC2 /* Invocations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invocations.m; sourceTree = "<group>"; };
+		114CE83925639C4E00179FC2 /* MemoryManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManagement.h; sourceTree = "<group>"; };
+		114CE83A25639C4E00179FC2 /* MemoryManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManagement.m; sourceTree = "<group>"; };
+		114CE83C2563CD7B00179FC2 /* AdvancedMemoryManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedMemoryManagement.h; sourceTree = "<group>"; };
+		114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedMemoryManagement.m; sourceTree = "<group>"; };
+		114CE83F2563CFFA00179FC2 /* memory_management_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory_management_2x.png; sourceTree = "<group>"; };
+		114CE8412563F57800179FC2 /* retaincycles_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retaincycles_2x.png; sourceTree = "<group>"; };
 		1162AB93255FD04500D6D099 /* RuntimeVersionsPlatforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeVersionsPlatforms.h; sourceTree = "<group>"; };
 		1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeVersionsPlatforms.m; sourceTree = "<group>"; };
 		1162AB96255FD3F200D6D099 /* InteractWithRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractWithRuntime.h; sourceTree = "<group>"; };
@@ -149,6 +171,20 @@
 				11D97F632562301700781528 /* TypeEncodings.m */,
 				11D97F652562304F00781528 /* DeclaredProperties.h */,
 				11D97F662562304F00781528 /* DeclaredProperties.m */,
+				114CE82D2563709C00179FC2 /* KeyValueCoding.h */,
+				114CE82E2563709C00179FC2 /* KeyValueCoding.m */,
+				114CE83025637F1B00179FC2 /* CopingController.h */,
+				114CE83125637F1B00179FC2 /* CopingController.m */,
+				114CE8332563957900179FC2 /* ValueWrappersTransformations.h */,
+				114CE8342563957900179FC2 /* ValueWrappersTransformations.m */,
+				114CE8362563964100179FC2 /* Invocations.h */,
+				114CE8372563964100179FC2 /* Invocations.m */,
+				114CE83925639C4E00179FC2 /* MemoryManagement.h */,
+				114CE83A25639C4E00179FC2 /* MemoryManagement.m */,
+				114CE83C2563CD7B00179FC2 /* AdvancedMemoryManagement.h */,
+				114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */,
+				114CE8412563F57800179FC2 /* retaincycles_2x.png */,
+				114CE83F2563CFFA00179FC2 /* memory_management_2x.png */,
 				11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */,
 				11D97F702562852100781528 /* propertyTypeEncoding.png */,
 				11D97F6E2562837600781528 /* methodEncoding.png */,
@@ -290,10 +326,12 @@
 				119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */,
 				11D97F6F2562837600781528 /* methodEncoding.png in Resources */,
 				11142B8924A04D890004B482 /* README.md in Resources */,
+				114CE8402563CFFA00179FC2 /* memory_management_2x.png in Resources */,
 				11D97F6B2562809200781528 /* forwarding.gif in Resources */,
 				11D97F6925624A5200781528 /* messaging1.gif in Resources */,
 				11D97F712562852100781528 /* propertyTypeEncoding.png in Resources */,
 				11D97F6D256282D200781528 /* encoding.png in Resources */,
+				114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */,
 				11D97F732562858F00781528 /* PropertyAttributeDescriptionExamples.png in Resources */,
 				119E09DC24444ECB003FB6F2 /* Main.storyboard in Resources */,
 			);
@@ -320,15 +358,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114CE83E2563CD7B00179FC2 /* AdvancedMemoryManagement.m in Sources */,
 				119E09D324444ECB003FB6F2 /* AppDelegate.m in Sources */,
+				114CE83B25639C4E00179FC2 /* MemoryManagement.m in Sources */,
 				11D97F612562300700781528 /* MessageForwarding.m in Sources */,
 				119E09E424444ECD003FB6F2 /* main.m in Sources */,
 				11D97F5E25622FEC00781528 /* DynamicMethodResolution.m in Sources */,
+				114CE8352563957900179FC2 /* ValueWrappersTransformations.m in Sources */,
+				114CE8382563964100179FC2 /* Invocations.m in Sources */,
 				11D97F5B25622FB500781528 /* Messaging.m in Sources */,
 				1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */,
 				11D97F642562301700781528 /* TypeEncodings.m in Sources */,
 				11D97F672562304F00781528 /* DeclaredProperties.m in Sources */,
 				1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */,
+				114CE82F2563709C00179FC2 /* KeyValueCoding.m in Sources */,
+				114CE83225637F1B00179FC2 /* CopingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

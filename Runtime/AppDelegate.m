@@ -14,12 +14,20 @@
 #import "MessageForwarding.h"
 #import "TypeEncodings.h"
 #import "DeclaredProperties.h"
+#import "KeyValueCoding.h"
+#import "CopingController.h"
 
 //Runtime 官方文档
 //https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048-CH1-SW1
 
 //iOS开发文档
 //https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html
+
+// Advanced Memory Management
+//https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmPractical.html#//apple_ref/doc/uid/TP40004447-SW1
+
+// Instruments Help
+//https://help.apple.com/instruments/mac/current/#/dev7b09c84f5
 
 
 @interface AppDelegate ()
@@ -33,7 +41,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    RuntimeVersionsPlatforms *vc = [RuntimeVersionsPlatforms new];
+    KeyValueCoding *vc = [KeyValueCoding new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
