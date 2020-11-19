@@ -23,10 +23,10 @@
 //iOS开发文档
 //https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html
 
-// Advanced Memory Management
+//Advanced Memory Management
 //https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmPractical.html#//apple_ref/doc/uid/TP40004447-SW1
 
-// Instruments Help
+//Instruments Help
 //https://help.apple.com/instruments/mac/current/#/dev7b09c84f5
 
 

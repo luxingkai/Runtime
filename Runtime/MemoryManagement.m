@@ -44,7 +44,7 @@
      ====================================================
      @autoreleasepool blocks are more efficient than using
      an instance of NSAutoreleasePool directly; you can
-     also use them even if you do not ues ARC.
+     also use them even if you do not use ARC.
      
      In a reference-counted environment (as opposed to one
      which uses garbage collection), an NSAutoreleasePool
