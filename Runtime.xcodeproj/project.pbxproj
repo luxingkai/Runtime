@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		11142B8924A04D890004B482 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11142B8824A04D890004B482 /* README.md */; };
 		1144CDE925663FE30018E831 /* StackHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1144CDE825663FE30018E831 /* StackHeap.m */; };
+		1148E58C256761270002372F /* KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148E58B256761270002372F /* KVO.m */; };
+		1148E58F256761340002372F /* KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148E58E256761340002372F /* KVC.m */; };
 		114CE82F2563709C00179FC2 /* KeyValueCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE82E2563709C00179FC2 /* KeyValueCoding.m */; };
 		114CE83225637F1B00179FC2 /* CopingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE83125637F1B00179FC2 /* CopingController.m */; };
 		114CE8352563957900179FC2 /* ValueWrappersTransformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE8342563957900179FC2 /* ValueWrappersTransformations.m */; };
@@ -60,6 +62,10 @@
 		11142B8824A04D890004B482 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		1144CDE725663FE30018E831 /* StackHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackHeap.h; sourceTree = "<group>"; };
 		1144CDE825663FE30018E831 /* StackHeap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackHeap.m; sourceTree = "<group>"; };
+		1148E58A256761270002372F /* KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVO.h; sourceTree = "<group>"; };
+		1148E58B256761270002372F /* KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVO.m; sourceTree = "<group>"; };
+		1148E58D256761340002372F /* KVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVC.h; sourceTree = "<group>"; };
+		1148E58E256761340002372F /* KVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVC.m; sourceTree = "<group>"; };
 		114CE82D2563709C00179FC2 /* KeyValueCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueCoding.h; sourceTree = "<group>"; };
 		114CE82E2563709C00179FC2 /* KeyValueCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyValueCoding.m; sourceTree = "<group>"; };
 		114CE83025637F1B00179FC2 /* CopingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopingController.h; sourceTree = "<group>"; };
@@ -188,6 +194,10 @@
 				114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */,
 				1144CDE725663FE30018E831 /* StackHeap.h */,
 				1144CDE825663FE30018E831 /* StackHeap.m */,
+				1148E58A256761270002372F /* KVO.h */,
+				1148E58B256761270002372F /* KVO.m */,
+				1148E58D256761340002372F /* KVC.h */,
+				1148E58E256761340002372F /* KVC.m */,
 				114CE8412563F57800179FC2 /* retaincycles_2x.png */,
 				114CE83F2563CFFA00179FC2 /* memory_management_2x.png */,
 				11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */,
@@ -375,6 +385,8 @@
 				1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */,
 				1144CDE925663FE30018E831 /* StackHeap.m in Sources */,
 				11D97F642562301700781528 /* TypeEncodings.m in Sources */,
+				1148E58F256761340002372F /* KVC.m in Sources */,
+				1148E58C256761270002372F /* KVO.m in Sources */,
 				11D97F672562304F00781528 /* DeclaredProperties.m in Sources */,
 				1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */,
 				114CE82F2563709C00179FC2 /* KeyValueCoding.m in Sources */,
