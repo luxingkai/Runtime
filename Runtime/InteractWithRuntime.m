@@ -64,7 +64,7 @@
      Subclasses of NSObject can implement this method to return more
      details. For example, the Foundation class NSArray returns a list
      of descriptions of the objects it contains.
-
+     
      Some of the NSObject methods simply query the runtime system
      for information. These methods allow objects to perform
      introspection. Examples of such methods are the class method,

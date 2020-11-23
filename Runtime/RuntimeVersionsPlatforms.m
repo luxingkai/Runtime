@@ -32,12 +32,12 @@
      The most notable new feature is that instance variables in the
      modern runtime are “non-fragile”:
 
-     •  In the legacy runtime, if you change the layout of instance variables
-        in a class, you must recompile classes that inherit from it.
+     •  In the legacy runtime, if you change the layout of instance
+        variables in a class, you must recompile classes that inherit from it.
      •  In the modern runtime, if you change the layout of instance variables
         in a class, you do not have to recompile classes that inherit from it.
      
-     In addition , the modern runtime supports instance variable synthesis for
+     In addition, the modern runtime supports instance variable synthesis for
      declared properties.
      
      

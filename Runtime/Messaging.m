@@ -173,7 +173,8 @@
      
      void (*setter) (id, SEL, BOOL);
      int i;
-     setter = (void (*)(id, SEL, BOOL))[target methodForSelector:@selector(setFilled:)];
+     setter = (void (*)(id, SEL, BOOL))[target methodForSelector:
+     @selector(setFilled:)];
      for (i = 0; i < 1000; i ++)
         setter(targetList[i], @selector(setFilled:), YES);
      
@@ -190,6 +191,11 @@
      Note that methoForSelector: is provided by the Cocoa runtime
      system; it's not a feature of the Objective-C language itself.
      */
+    
+    
+    
+    
+    
     
 }
 
