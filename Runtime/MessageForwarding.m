@@ -26,17 +26,20 @@
      chance to handle the message.
      */
     
+//    NSMethodSignature *methodSigature = [self methodSignatureForSelector:@selector(known)];
+    
+    
     /**
      Forwarding
      
      If you send a message to an object that does not handle
      that message, before announcing an error the runtime sends
-     the object a forwordInvocation: message with an NSInvocation
-     object as its sole argument-the NSInvocation object encapsulates
+     the object a forwardInvocation: message with an NSInvocation
+     object as its sole argument- the NSInvocation object encapsulates
      the original message and the arguments that were passed with
      it.
      
-     You can implement a forwordInvocation: method to give a default
+     You can implement a forwardInvocation: method to give a default
      response to the message, or to avoid the error in some other
      way. As its name implies, forwardInvocation: is commonly used
      to forward the message to another object.
@@ -81,7 +84,7 @@
      the future.
      
      The second chance offered by a forwardInvocation: message provides
-     a less ad hoc solution to this problem, and one that's
+     a less adhoc solution to this problem, and one that's
      dynamic rather than static. It works like this: When an object can't
      respond to a message because it doesn't have a method matching the
      selector in the message, the runtime system informs the object by
@@ -89,7 +92,7 @@
      forwordInvocation:method from the NSObject class. However, NSObject's
      version of the method simply invokes doesNotRecognizeSelector:.
      By overriding NSObject's version and implementing your own, you
-     can take advantage of the opportunity that the forwordInvocation:
+     can take advantage of the opportunity that the forwardInvocation:
      message provides to forward messages to other objects.
      
      To forward a message, all a forwardInvocation: method needs to
@@ -100,7 +103,7 @@
      The message can be sent with the invokeWithTarget:method:
      - (void)formardInvocation:(NSInvocation *)anInvocation
      {
-        if([someOtherObject respondsToSelector: [anInvocation selector]])
+        if([someOtherObject respondsToSelector:[anInvocation selector]])
             [anInvocation invokeWithTarget:someOtherObject];
         else
             [super forwardInvocation:anInvocation];
@@ -111,7 +114,7 @@
      delivered to the sender, including ids, structures, and double-
      precision floating-point numbers.
      
-    A forwardInvocation:method can act as a distribution center for
+     A forwardInvocation:method can act as a distribution center for
      unrecognized messages, parceling them out to different receivers.
      Or it can be a transfer station, sending all messages to the same
      destination. It can translate one message into another, or simply
@@ -285,8 +288,19 @@
      NSInvocation class specification in the Foundation framework
      reference.
      */
+
+    
     
 }
+
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    
+    
+}
+
+
+
 
 /*
 #pragma mark - Navigation

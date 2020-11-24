@@ -8,11 +8,15 @@
 
 #import "DynamicMethodResolution.h"
 #include <objc/objc.h>
+#import <objc/runtime.h>
 @interface DynamicMethodResolution ()
 
 @end
 
 @implementation DynamicMethodResolution
+//@dynamic content;
+@synthesize content = _content;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,8 +33,9 @@
      There are situations where you might want to provide an implementation
      of a method dynamically. For example, the Objective-C declared properties
      feature includes the @dynamic directive:
+     =============================================================
      @dynamic propertyName;
-     
+     =============================================================
      which tells the compiler that the methods associated with the property
      will be provided dynamically.
      
@@ -42,14 +47,15 @@
      arguments -- self and __cmd. You can add a function to a class as a
      method using the function class_addMethod. Therefore, given the following
      function:
-     
+     =============================================================
      void dynamicMethodIMP(id self, SEL __cmd) {
         //implementation...
      }
+     =============================================================
      
      you can dynamically add it to a class as a method (called
      resolveThisMethodDynamically) using resolveInstanceMethod: like this:
-     
+     =============================================================
      @implementation MyClass
      + (BOOL)resolveInstanceMethod:(SEL)aSEL
      {
@@ -59,6 +65,7 @@
         }
         return [super resolveInstanceMethod:aSEL];
      }
+     =============================================================
      
      Forwarding methods (as described in Message Forwarding) and
      dynamic method resolution are, largely, orthogonal. A class has
@@ -103,13 +110,32 @@
      class specification in the Foundation framework reference
      for information on the NSBundle class and its use.
      */
+        
     
-    
+
     
 }
 
+void dynamicMethodIMP(id self, SEL __cmd) {
+   //implementation...
+    
+}
 
++ (BOOL)resolveInstanceMethod:(SEL)aSEL {
+    NSLog(@"%@",NSStringFromSelector(aSEL));
+    if(aSEL == @selector(viewDidLoad)) {
+       class_addMethod([self class], aSEL, (IMP)dynamicMethodIMP, "v@:");
+       return YES;
+   }
+   return [super resolveInstanceMethod:aSEL];
+}
 
+//+ (BOOL)resolveClassMethod:(SEL)sel {
+//    NSLog(@"%@",NSStringFromSelector(sel));
+//
+//    return YES;
+//}
+                       
 
 
 

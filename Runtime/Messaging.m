@@ -8,6 +8,7 @@
 
 #import "Messaging.h"
 #import <objc/runtime.h>
+#import <objc/objc.h>
 
 @interface Messaging ()
 
@@ -64,7 +65,7 @@
      •  A class dispatch table. This table has entries that associate method
         selectors with the class-specific addresses of the methods they identity.
         The selector for the setOrigin: method is associated with the address of
-        (the procedure that implements) setOrigin::, the selector for the display
+        (the procedure that implements) setOrigin:, the selector for the display
         method is associated with display's address, and so on.
      
      When a new object is created, memory for it is allocated, and its instance
@@ -100,17 +101,14 @@
      and addresses of methods as they are used. There's a separate cache
      for each class, and it can contain selectors for inherited methods
      as well as for methods defined in the class. Before searching the
-     dispatch tables, the messaging routine first chechs the cache of
+     dispatch tables, the messaging routine first checks the cache of
      the receiving object's class (on the theory that a method that
      was used once may likely be used again). If the method selector
      is in the cache, messaging is only slightly slower than a function
      call. Once a program has been running long enough to "warm up" its
-     cache, messaging is only slightly slower than a function call.
-     Once a program has been running long enough to "warm up" its caches,
-     messaging is only slightly slower than a function call. Once a
-     program has been running long enough to "warm up" its caches,
-     almost all the messages its sends find a cached method. Caches
-     grow dynamically to accommendate new messages as the program runs.
+     cache, almost all the messages it sends find a cached method.
+     Caches grow dynamically to accommendate new messages as the
+     program runs.
     */
     
     
@@ -135,7 +133,7 @@
      object as self, and to its own selector as _cmd. In the example
      below, _cmd refers to the selector for the strange method and
      self to the object that receives a strange message.
-     
+     ===============================================================
      - strange
      {
         id target = getTheReceiver();
@@ -145,7 +143,7 @@
             return nil;
         return [target performSelector:method];
      }
-     
+     ===============================================================
      self is the more useful of the two arguments. It is, in fact, the
      way the receiving object's instance variables are made available
      to the method definition.
@@ -158,10 +156,10 @@
      address of a method and call it directly as if it were a
      function. This might be appropriate on the rare occasions
      when a particular method will be performed many times in
-     succession and you wnat to avoidd the overhead of messaging
+     succession and you want to avoid the overhead of messaging
      each time the method is performed.
      
-     With a method defined in the NSObjet class, methodForSelectorL:,
+     With a method defined in the NSObject class, methodForSelector:,
      yon can ask for a pointer to the procedure that implements
      a method, then use the pointer to call the procedure. The
      pointer that methodForSelector: returns must be carfully cast
@@ -170,14 +168,14 @@
      
      The example below shows how the procedure that implements
      the setFilled: method might be called:
-     
+     ===============================================================
      void (*setter) (id, SEL, BOOL);
      int i;
      setter = (void (*)(id, SEL, BOOL))[target methodForSelector:
      @selector(setFilled:)];
      for (i = 0; i < 1000; i ++)
         setter(targetList[i], @selector(setFilled:), YES);
-     
+     ===============================================================
      The first two arguments passed to the procedure are the
      receiving object (self) and the method selector(_cmd). These
      arguments are hidden in method syntax but must be made explicit
@@ -194,8 +192,7 @@
     
     
     
-    
-    
+        
     
 }
 

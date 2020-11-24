@@ -43,7 +43,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    KVC *vc = [KVC new];
+    MessageForwarding *vc = [MessageForwarding new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     

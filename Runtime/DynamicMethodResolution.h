@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DynamicMethodResolution : UIViewController
 
+@property (nonatomic, strong) NSString *content;
+
+- (void)resolveThisMethodDynamically;
 @end
 
 NS_ASSUME_NONNULL_END
