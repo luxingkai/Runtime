@@ -44,6 +44,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     MessageForwarding *vc = [MessageForwarding new];
+    [vc performMethod];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
