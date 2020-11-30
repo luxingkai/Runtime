@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11142B8924A04D890004B482 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11142B8824A04D890004B482 /* README.md */; };
+		113DFBE82574920F00E945F5 /* layout.png in Resources */ = {isa = PBXBuildFile; fileRef = 113DFBE72574920F00E945F5 /* layout.png */; };
 		1144CDE925663FE30018E831 /* StackHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1144CDE825663FE30018E831 /* StackHeap.m */; };
 		11479CBB256CA52000AF877E /* WebPMux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11479CB6256CA52000AF877E /* WebPMux.framework */; };
 		11479CBC256CA52000AF877E /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11479CB7256CA52000AF877E /* WebP.framework */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		11142B8824A04D890004B482 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		113DFBE72574920F00E945F5 /* layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layout.png; sourceTree = "<group>"; };
 		1144CDE725663FE30018E831 /* StackHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackHeap.h; sourceTree = "<group>"; };
 		1144CDE825663FE30018E831 /* StackHeap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackHeap.m; sourceTree = "<group>"; };
 		11479CB6256CA52000AF877E /* WebPMux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebPMux.framework; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				1148E58B256761270002372F /* KVO.m */,
 				1148E58D256761340002372F /* KVC.h */,
 				1148E58E256761340002372F /* KVC.m */,
+				113DFBE72574920F00E945F5 /* layout.png */,
 				114CE8412563F57800179FC2 /* retaincycles_2x.png */,
 				114CE83F2563CFFA00179FC2 /* memory_management_2x.png */,
 				11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */,
@@ -373,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11479CBE256CA52000AF877E /* README in Resources */,
+				113DFBE82574920F00E945F5 /* layout.png in Resources */,
 				119E09E124444ECD003FB6F2 /* LaunchScreen.storyboard in Resources */,
 				119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */,
 				11D97F6F2562837600781528 /* methodEncoding.png in Resources */,

@@ -44,7 +44,7 @@
      or even itself (again to determine when a dependent value changes).
      
      You can observe properties including simple attributes, to-one
-     relationships, and to-mamy relationships. Observes of to-many
+     relationships, and to-many relationships. Observes of to-many
      relationship are informed of the type of change made -- as well
      as which objects are involved in the change.
      
@@ -702,7 +702,7 @@
      essentially contains pointers to the methods the class implements,
      among other data.
      
-     When an observer is registered for an attribtute of an object
+     When an observer is registered for an attribute of an object
      the isa pointer of the observed object is modified, pointing
      to an intermadiate class rather than at the true class. As a
      result the value of the isa pointer does not necessarily reflect
