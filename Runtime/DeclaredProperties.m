@@ -68,24 +68,32 @@
      const char *property_getName(objc_property_t property)
      ----------------------------------------------------
      
-     You can use the functions class_getProperty and protocol_getProperty to get a reference to a property with a given name in a class and protocol respectively:
+     You can use the functions class_getProperty and protocol_getProperty
+     to get a reference to a property with a given name in a class and
+     protocol respectively:
      ----------------------------------------------------
      objc_property_t class_getProperty(Class cls, const char *name)
      objc_property_t protocol_getProperty(Protocol *proto, const char *name, BOOL isRequiredProperty, BOOL isInstanceProperty)
      ----------------------------------------------------
 
-     You can use the property_getAttributes function to discover the name and the @encode type string of a property. For details of the encoding type strings, see Type Encodings; for details of this string, see Property Type String and Property Attribute Description Examples.
+     You can use the property_getAttributes function to discover
+     the name and the @encode type string of a property. For
+     details of the encoding type strings, see Type Encodings;
+     for details of this string, see Property Type String and
+     Property Attribute Description Examples.
      ----------------------------------------------------
      const char *property_getAttributes(objc_property_t property)
      ----------------------------------------------------
-     Putting these together, you can print a list of all the properties associated with a class using the following code:
+     Putting these together, you can print a list of all the
+     properties associated with a class using the following code:
      ----------------------------------------------------
      id LenderClass = objc_getClass("Lender");
      unsigned int outCount, i;
      objc_property_t *properties = class_copyPropertyList(LenderClass, &outCount);
      for (i = 0; i < outCount; i++) {
          objc_property_t property = properties[i];
-         fprintf(stdout, "%s %s\n", property_getName(property), property_getAttributes(property));
+         fprintf(stdout, "%s %s\n", property_getName(property),
+     property_getAttributes(property));
      }
      ----------------------------------------------------
      
@@ -121,7 +129,8 @@
      the following table shows sample property declarations and
      the corresponding string returned by property_getAttributes:
 
-      file:///Users/tigerfly/Desktop/Runtime/Runtime/PropertyAttributeDescriptionExamples
+     file:///Users/tigerfly/Desktop/Runtime/Runtime/PropertyAttributeDescriptionExamples.png
+
      */
 }
 

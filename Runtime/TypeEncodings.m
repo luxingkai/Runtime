@@ -21,7 +21,7 @@
     
     /*
      To assist the runtime system, the compiler encodes the
-     return and argument types for each method in a character
+     argument types and return for each method in a character
      string and associates the string with the method selector.
      The coding scheme it uses is also useful in other contexts
      and so is made publicly available with the @encode()
@@ -94,6 +94,10 @@
      methods in a protocol.
      file:///Users/tigerfly/Desktop/Runtime/Runtime/methodEncoding.png
      */
+    
+    
+    char *buf1 = @encode(long long);
+    printf("%s",buf1);
     
     
     

@@ -7,6 +7,7 @@
 //
 
 #import "KVC.h"
+#import <objc/runtime.h>
 
 @interface Transaction : NSObject<NSSecureCoding>
 
@@ -1722,6 +1723,14 @@
      ===========================================================
      
      */
+    
+    Class class = objc_getClass("Transaction");
+    unsigned int outCount;
+    objc_property_t *properties = class_copyPropertyList(class, &outCount);
+    for (int i = 0; i < outCount; i ++) {
+        objc_property_t property = properties[i];
+        printf("%s %s\n",property_getName(property), property_getAttributes(property));
+    }
     
     
     

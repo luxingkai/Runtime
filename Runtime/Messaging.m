@@ -38,7 +38,7 @@
      
      into a call on a messaging function, objc_msgSend. This function
      takes the receiver and the name of the method mentioned in the
-     message -- that is, the method seelctor -- as its two principal
+     message -- that is, the method selector -- as its two principal
      parameters:
      objc_msgSend(receiver, selector);
      
