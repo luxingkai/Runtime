@@ -482,7 +482,7 @@
      
      */
     
-    Transaction *transaction = [Transaction new];
+//    Transaction *transaction = [Transaction new];
     
     //    NSNumber *transactionAverage = [transaction valueForKeyPath:@"@avg.amount"];
     //    NSNumber *numberOfTransactions = [transaction valueForKeyPath:@"@count"];
@@ -1724,15 +1724,19 @@
      
      */
     
-    Class class = objc_getClass("Transaction");
-    unsigned int outCount;
-    objc_property_t *properties = class_copyPropertyList(class, &outCount);
-    for (int i = 0; i < outCount; i ++) {
-        objc_property_t property = properties[i];
-        printf("%s %s\n",property_getName(property), property_getAttributes(property));
-    }
+//    Class class = objc_getClass("Transaction");
+//    unsigned int outCount;
+//    objc_property_t *properties = class_copyPropertyList(class, &outCount);
+//    for (int i = 0; i < outCount; i ++) {
+//        objc_property_t property = properties[i];
+//        printf("%s %s\n",property_getName(property), property_getAttributes(property));
+//    }
     
     
+//    NSDate *date = [NSDate date];
+//    Transaction *transaction = [Transaction new];
+//    transaction.date = date;
+//    NSLog(@"%@",date);
     
 }
 

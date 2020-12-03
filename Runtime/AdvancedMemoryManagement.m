@@ -47,7 +47,7 @@
      
      Objective-C provides two methods of application memory management.
      1. In the method describled in this guide, referred to as
-        "manual retain-release" or MRR, you explicity manage memory
+        "manual retain-release" or MRC, you explicity manage memory
         by keeping track of objects you own. This is implemented using
         a model, known as reference counting, that the Foundation class
         NSObject provides in conjunction with the runtime environment.

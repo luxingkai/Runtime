@@ -29,7 +29,7 @@
      message when the pool itself is drained.
      
      ⚠️ If you use Automatic Reference Counting(ARC), you cannot
-     use autorelease pools directly. Instead, you ues @autoreleasepool
+     use autorelease pools directly. Instead, you use @autoreleasepool
      blocks. For example, in place of:
      ====================================================
      NSAutoreleasePool *pool = [NSAutoreleasePool alloc] init];
@@ -76,7 +76,7 @@
      
      You create an NSAutoreleasePool object with the usual
      alloc and init messages and dispose of it with drain
-     (or release -- to understand the  difference, see garbage
+     (or release -- to understand the difference, see garbage
      collection). Since you cannot retain an autorelease pool
      (or autorelease it -- see retain and autorelease), draining
      a pool ultimately has the effect of deallocating it. You
@@ -93,6 +93,13 @@
      automatically drains all of the autorelease pools associated
      with itself.
      */
+    
+    @autoreleasepool {
+        for (int i = 0; i < 1000; i ++) {
+            NSObject *obejct = [NSObject new];
+        }
+    }
+    
     
     /*
      Threads
@@ -118,8 +125,8 @@
      must first detach at least one NSThread object, which can immediately
      exit. You can test whether Cocoa is in multithreading mode with
      the NSThread class method isMultiThreaded.
-     
      */
+
     
     /*
      Garbage Collection
