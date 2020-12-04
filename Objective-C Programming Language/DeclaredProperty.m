@@ -6,13 +6,13 @@
 //  Copyright © 2020 tiger fly. All rights reserved.
 //
 
-#import "DeclaredProperties.h"
+#import "DeclaredProperty.h"
 
-@interface DeclaredProperties ()
+@interface DeclaredProperty ()
 
 @end
 
-@implementation DeclaredProperties
+@implementation DeclaredProperty
 
 - (void)viewDidLoad {
     [super viewDidLoad];
