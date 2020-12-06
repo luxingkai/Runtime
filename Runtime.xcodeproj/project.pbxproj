@@ -43,6 +43,19 @@
 		114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE8412563F57800179FC2 /* retaincycles_2x.png */; };
 		1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */; };
 		1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB97255FD3F200D6D099 /* InteractWithRuntime.m */; };
+		1181E4A1257CB0380079C79D /* ClassClusters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4A0257CB0380079C79D /* ClassClusters.m */; };
+		1181E4A4257CB0470079C79D /* ClassFactoryMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4A3257CB0470079C79D /* ClassFactoryMethods.m */; };
+		1181E4A7257CB05D0079C79D /* DelegatesAndDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4A6257CB05D0079C79D /* DelegatesAndDataSources.m */; };
+		1181E4AA257CB06D0079C79D /* Introspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4A9257CB06D0079C79D /* Introspection.m */; };
+		1181E4AD257CB07D0079C79D /* ObjectAllocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4AC257CB07D0079C79D /* ObjectAllocation.m */; };
+		1181E4B0257CB0990079C79D /* ObjectInitialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4AF257CB0990079C79D /* ObjectInitialization.m */; };
+		1181E4B3257CB0A80079C79D /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4B2257CB0A80079C79D /* ModelViewController.m */; };
+		1181E4B6257CB0B90079C79D /* ObjectModeling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4B5257CB0B90079C79D /* ObjectModeling.m */; };
+		1181E4B9257CB0D20079C79D /* ObjectMutability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4B8257CB0D20079C79D /* ObjectMutability.m */; };
+		1181E4BC257CB0F80079C79D /* Outlets.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4BB257CB0F80079C79D /* Outlets.m */; };
+		1181E4BF257CB10D0079C79D /* ReceptionistPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4BE257CB10D0079C79D /* ReceptionistPattern.m */; };
+		1181E4C2257CB1200079C79D /* Target-Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4C1257CB1200079C79D /* Target-Action.m */; };
+		1181E4C5257CB13E0079C79D /* Toll-Free Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */; };
 		119E09D324444ECB003FB6F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09D224444ECB003FB6F2 /* AppDelegate.m */; };
 		119E09DC24444ECB003FB6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119E09DA24444ECB003FB6F2 /* Main.storyboard */; };
 		119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119E09DD24444ECD003FB6F2 /* Assets.xcassets */; };
@@ -139,6 +152,32 @@
 		1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeVersionsPlatforms.m; sourceTree = "<group>"; };
 		1162AB96255FD3F200D6D099 /* InteractWithRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractWithRuntime.h; sourceTree = "<group>"; };
 		1162AB97255FD3F200D6D099 /* InteractWithRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractWithRuntime.m; sourceTree = "<group>"; };
+		1181E49F257CB0380079C79D /* ClassClusters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassClusters.h; sourceTree = "<group>"; };
+		1181E4A0257CB0380079C79D /* ClassClusters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassClusters.m; sourceTree = "<group>"; };
+		1181E4A2257CB0470079C79D /* ClassFactoryMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassFactoryMethods.h; sourceTree = "<group>"; };
+		1181E4A3257CB0470079C79D /* ClassFactoryMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassFactoryMethods.m; sourceTree = "<group>"; };
+		1181E4A5257CB05D0079C79D /* DelegatesAndDataSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegatesAndDataSources.h; sourceTree = "<group>"; };
+		1181E4A6257CB05D0079C79D /* DelegatesAndDataSources.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesAndDataSources.m; sourceTree = "<group>"; };
+		1181E4A8257CB06D0079C79D /* Introspection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Introspection.h; sourceTree = "<group>"; };
+		1181E4A9257CB06D0079C79D /* Introspection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Introspection.m; sourceTree = "<group>"; };
+		1181E4AB257CB07D0079C79D /* ObjectAllocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectAllocation.h; sourceTree = "<group>"; };
+		1181E4AC257CB07D0079C79D /* ObjectAllocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectAllocation.m; sourceTree = "<group>"; };
+		1181E4AE257CB0990079C79D /* ObjectInitialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectInitialization.h; sourceTree = "<group>"; };
+		1181E4AF257CB0990079C79D /* ObjectInitialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectInitialization.m; sourceTree = "<group>"; };
+		1181E4B1257CB0A80079C79D /* ModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelViewController.h; sourceTree = "<group>"; };
+		1181E4B2257CB0A80079C79D /* ModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
+		1181E4B4257CB0B90079C79D /* ObjectModeling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectModeling.h; sourceTree = "<group>"; };
+		1181E4B5257CB0B90079C79D /* ObjectModeling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectModeling.m; sourceTree = "<group>"; };
+		1181E4B7257CB0D20079C79D /* ObjectMutability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectMutability.h; sourceTree = "<group>"; };
+		1181E4B8257CB0D20079C79D /* ObjectMutability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectMutability.m; sourceTree = "<group>"; };
+		1181E4BA257CB0F80079C79D /* Outlets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Outlets.h; sourceTree = "<group>"; };
+		1181E4BB257CB0F80079C79D /* Outlets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Outlets.m; sourceTree = "<group>"; };
+		1181E4BD257CB10D0079C79D /* ReceptionistPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceptionistPattern.h; sourceTree = "<group>"; };
+		1181E4BE257CB10D0079C79D /* ReceptionistPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceptionistPattern.m; sourceTree = "<group>"; };
+		1181E4C0257CB1200079C79D /* Target-Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Target-Action.h"; sourceTree = "<group>"; };
+		1181E4C1257CB1200079C79D /* Target-Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Target-Action.m"; sourceTree = "<group>"; };
+		1181E4C3257CB13E0079C79D /* Toll-Free Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toll-Free Bridging.h"; sourceTree = "<group>"; };
+		1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Toll-Free Bridging.m"; sourceTree = "<group>"; };
 		119E09CE24444ECB003FB6F2 /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119E09D124444ECB003FB6F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		119E09D224444ECB003FB6F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -249,9 +288,43 @@
 			path = "libwebp-1.1.0-ios-framework";
 			sourceTree = "<group>";
 		};
+		1181E49E257CB0010079C79D /* ConceptsInObjective-C Programming */ = {
+			isa = PBXGroup;
+			children = (
+				1181E49F257CB0380079C79D /* ClassClusters.h */,
+				1181E4A0257CB0380079C79D /* ClassClusters.m */,
+				1181E4A2257CB0470079C79D /* ClassFactoryMethods.h */,
+				1181E4A3257CB0470079C79D /* ClassFactoryMethods.m */,
+				1181E4A5257CB05D0079C79D /* DelegatesAndDataSources.h */,
+				1181E4A6257CB05D0079C79D /* DelegatesAndDataSources.m */,
+				1181E4A8257CB06D0079C79D /* Introspection.h */,
+				1181E4A9257CB06D0079C79D /* Introspection.m */,
+				1181E4AB257CB07D0079C79D /* ObjectAllocation.h */,
+				1181E4AC257CB07D0079C79D /* ObjectAllocation.m */,
+				1181E4AE257CB0990079C79D /* ObjectInitialization.h */,
+				1181E4AF257CB0990079C79D /* ObjectInitialization.m */,
+				1181E4B1257CB0A80079C79D /* ModelViewController.h */,
+				1181E4B2257CB0A80079C79D /* ModelViewController.m */,
+				1181E4B4257CB0B90079C79D /* ObjectModeling.h */,
+				1181E4B5257CB0B90079C79D /* ObjectModeling.m */,
+				1181E4B7257CB0D20079C79D /* ObjectMutability.h */,
+				1181E4B8257CB0D20079C79D /* ObjectMutability.m */,
+				1181E4BA257CB0F80079C79D /* Outlets.h */,
+				1181E4BB257CB0F80079C79D /* Outlets.m */,
+				1181E4BD257CB10D0079C79D /* ReceptionistPattern.h */,
+				1181E4BE257CB10D0079C79D /* ReceptionistPattern.m */,
+				1181E4C0257CB1200079C79D /* Target-Action.h */,
+				1181E4C1257CB1200079C79D /* Target-Action.m */,
+				1181E4C3257CB13E0079C79D /* Toll-Free Bridging.h */,
+				1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */,
+			);
+			path = "ConceptsInObjective-C Programming";
+			sourceTree = "<group>";
+		};
 		119E09C524444ECB003FB6F2 = {
 			isa = PBXGroup;
 			children = (
+				1181E49E257CB0010079C79D /* ConceptsInObjective-C Programming */,
 				113D0FA025789284004964F2 /* Objective-C Programming Language */,
 				11479CB2256CA50000AF877E /* Framework */,
 				119E09D024444ECB003FB6F2 /* Runtime */,
@@ -497,9 +570,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				114CE83E2563CD7B00179FC2 /* AdvancedMemoryManagement.m in Sources */,
+				1181E4A1257CB0380079C79D /* ClassClusters.m in Sources */,
 				119E09D324444ECB003FB6F2 /* AppDelegate.m in Sources */,
 				113D0FC92578D452004964F2 /* ExceptionHandling.m in Sources */,
+				1181E4B3257CB0A80079C79D /* ModelViewController.m in Sources */,
 				114CE83B25639C4E00179FC2 /* MemoryManagement.m in Sources */,
+				1181E4AA257CB06D0079C79D /* Introspection.m in Sources */,
+				1181E4A4257CB0470079C79D /* ClassFactoryMethods.m in Sources */,
 				11D97F612562300700781528 /* MessageForwarding.m in Sources */,
 				113D0FB72578D312004964F2 /* DeclaredProperty.m in Sources */,
 				119E09E424444ECD003FB6F2 /* main.m in Sources */,
@@ -513,13 +590,22 @@
 				113D0FC32578D368004964F2 /* EnablingStaticBehavior.m in Sources */,
 				1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */,
 				1144CDE925663FE30018E831 /* StackHeap.m in Sources */,
+				1181E4A7257CB05D0079C79D /* DelegatesAndDataSources.m in Sources */,
 				113D0FC02578D350004964F2 /* FastEnumeration.m in Sources */,
+				1181E4BF257CB10D0079C79D /* ReceptionistPattern.m in Sources */,
 				11D97F642562301700781528 /* TypeEncodings.m in Sources */,
+				1181E4C5257CB13E0079C79D /* Toll-Free Bridging.m in Sources */,
 				1148E58F256761340002372F /* KVC.m in Sources */,
+				1181E4B6257CB0B90079C79D /* ObjectModeling.m in Sources */,
 				113D0FBD2578D33F004964F2 /* AssociativeReferences.m in Sources */,
 				113D0FBA2578D327004964F2 /* CategoriesExtensions.m in Sources */,
+				1181E4AD257CB07D0079C79D /* ObjectAllocation.m in Sources */,
+				1181E4BC257CB0F80079C79D /* Outlets.m in Sources */,
 				1148E58C256761270002372F /* KVO.m in Sources */,
+				1181E4B9257CB0D20079C79D /* ObjectMutability.m in Sources */,
 				113D0FA3257892CF004964F2 /* ObjectsClassesMessages.m in Sources */,
+				1181E4C2257CB1200079C79D /* Target-Action.m in Sources */,
+				1181E4B0257CB0990079C79D /* ObjectInitialization.m in Sources */,
 				11D97F672562304F00781528 /* DeclaredProperties.m in Sources */,
 				113D0FAC2578C649004964F2 /* DefiningClass.m in Sources */,
 				1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */,
