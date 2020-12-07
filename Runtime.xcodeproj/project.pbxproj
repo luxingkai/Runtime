@@ -43,6 +43,9 @@
 		114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE8412563F57800179FC2 /* retaincycles_2x.png */; };
 		1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */; };
 		1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB97255FD3F200D6D099 /* InteractWithRuntime.m */; };
+		1177E443257E2D050003579F /* cluster1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1177E442257E2D040003579F /* cluster1.gif */; };
+		1177E445257E2DEC0003579F /* cluster2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1177E444257E2DEC0003579F /* cluster2.gif */; };
+		1177E447257E2EC50003579F /* cluster3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1177E446257E2EC50003579F /* cluster3.gif */; };
 		1181E4A1257CB0380079C79D /* ClassClusters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4A0257CB0380079C79D /* ClassClusters.m */; };
 		1181E4A4257CB0470079C79D /* ClassFactoryMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4A3257CB0470079C79D /* ClassFactoryMethods.m */; };
 		1181E4A7257CB05D0079C79D /* DelegatesAndDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4A6257CB05D0079C79D /* DelegatesAndDataSources.m */; };
@@ -152,6 +155,9 @@
 		1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeVersionsPlatforms.m; sourceTree = "<group>"; };
 		1162AB96255FD3F200D6D099 /* InteractWithRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractWithRuntime.h; sourceTree = "<group>"; };
 		1162AB97255FD3F200D6D099 /* InteractWithRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractWithRuntime.m; sourceTree = "<group>"; };
+		1177E442257E2D040003579F /* cluster1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cluster1.gif; sourceTree = "<group>"; };
+		1177E444257E2DEC0003579F /* cluster2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cluster2.gif; sourceTree = "<group>"; };
+		1177E446257E2EC50003579F /* cluster3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cluster3.gif; sourceTree = "<group>"; };
 		1181E49F257CB0380079C79D /* ClassClusters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassClusters.h; sourceTree = "<group>"; };
 		1181E4A0257CB0380079C79D /* ClassClusters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassClusters.m; sourceTree = "<group>"; };
 		1181E4A2257CB0470079C79D /* ClassFactoryMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassFactoryMethods.h; sourceTree = "<group>"; };
@@ -288,7 +294,7 @@
 			path = "libwebp-1.1.0-ios-framework";
 			sourceTree = "<group>";
 		};
-		1181E49E257CB0010079C79D /* ConceptsInObjective-C Programming */ = {
+		1181E49E257CB0010079C79D /* ConceptsInObjective-CProgramming */ = {
 			isa = PBXGroup;
 			children = (
 				1181E49F257CB0380079C79D /* ClassClusters.h */,
@@ -317,14 +323,17 @@
 				1181E4C1257CB1200079C79D /* Target-Action.m */,
 				1181E4C3257CB13E0079C79D /* Toll-Free Bridging.h */,
 				1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */,
+				1177E446257E2EC50003579F /* cluster3.gif */,
+				1177E444257E2DEC0003579F /* cluster2.gif */,
+				1177E442257E2D040003579F /* cluster1.gif */,
 			);
-			path = "ConceptsInObjective-C Programming";
+			path = "ConceptsInObjective-CProgramming";
 			sourceTree = "<group>";
 		};
 		119E09C524444ECB003FB6F2 = {
 			isa = PBXGroup;
 			children = (
-				1181E49E257CB0010079C79D /* ConceptsInObjective-C Programming */,
+				1181E49E257CB0010079C79D /* ConceptsInObjective-CProgramming */,
 				113D0FA025789284004964F2 /* Objective-C Programming Language */,
 				11479CB2256CA50000AF877E /* Framework */,
 				119E09D024444ECB003FB6F2 /* Runtime */,
@@ -531,8 +540,11 @@
 				113DFBE82574920F00E945F5 /* layout.png in Resources */,
 				119E09E124444ECD003FB6F2 /* LaunchScreen.storyboard in Resources */,
 				119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */,
+				1177E447257E2EC50003579F /* cluster3.gif in Resources */,
 				11D97F6F2562837600781528 /* methodEncoding.png in Resources */,
 				113D0FA92578C2B4004964F2 /* cellhierarchy.gif in Resources */,
+				1177E445257E2DEC0003579F /* cluster2.gif in Resources */,
+				1177E443257E2D050003579F /* cluster1.gif in Resources */,
 				11142B8924A04D890004B482 /* README.md in Resources */,
 				114CE8402563CFFA00179FC2 /* memory_management_2x.png in Resources */,
 				11D97F6B2562809200781528 /* forwarding.gif in Resources */,

@@ -33,7 +33,7 @@
      of the API remain insulated from the implementation changes.
      
      Although using accessor methods therefore has significant
-     advantagese, writing accessor methods is a tedious process.
+     advantages, writing accessor methods is a tedious process.
      Moreover, aspects of the property that may be important to
      consumers of the API are left obscured -- such as whether
      the accessor methods are thread-safe or whether new values are
