@@ -77,6 +77,14 @@
 		11D97F6F2562837600781528 /* methodEncoding.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F6E2562837600781528 /* methodEncoding.png */; };
 		11D97F712562852100781528 /* propertyTypeEncoding.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F702562852100781528 /* propertyTypeEncoding.png */; };
 		11D97F732562858F00781528 /* PropertyAttributeDescriptionExamples.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */; };
+		11E604FD257F1BFF004AE097 /* compositeobject.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E604FC257F1BFE004AE097 /* compositeobject.gif */; };
+		11E604FF257F30BB004AE097 /* delegation1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11E604FE257F30BB004AE097 /* delegation1.jpg */; };
+		11E60501257F30F0004AE097 /* delegation2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11E60500257F30F0004AE097 /* delegation2.jpg */; };
+		11E60589257FABEC004AE097 /* init_inheritance_chain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E60588257FABEC004AE097 /* init_inheritance_chain.gif */; };
+		11E6058B257FABF2004AE097 /* designatedinitializer-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E6058A257FABF2004AE097 /* designatedinitializer-1.gif */; };
+		11E6058D257FB0B9004AE097 /* traditional_mvc.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E6058C257FB0B9004AE097 /* traditional_mvc.gif */; };
+		11E6058F257FB0F3004AE097 /* cocoa_mvc.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E6058E257FB0F3004AE097 /* cocoa_mvc.gif */; };
+		11E60591257FB1BE004AE097 /* cocoa_mvc_coord.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E60590257FB1BE004AE097 /* cocoa_mvc_coord.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +222,14 @@
 		11D97F6E2562837600781528 /* methodEncoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = methodEncoding.png; sourceTree = "<group>"; };
 		11D97F702562852100781528 /* propertyTypeEncoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = propertyTypeEncoding.png; sourceTree = "<group>"; };
 		11D97F722562858F00781528 /* PropertyAttributeDescriptionExamples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PropertyAttributeDescriptionExamples.png; sourceTree = "<group>"; };
+		11E604FC257F1BFE004AE097 /* compositeobject.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = compositeobject.gif; sourceTree = "<group>"; };
+		11E604FE257F30BB004AE097 /* delegation1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delegation1.jpg; sourceTree = "<group>"; };
+		11E60500257F30F0004AE097 /* delegation2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delegation2.jpg; sourceTree = "<group>"; };
+		11E60588257FABEC004AE097 /* init_inheritance_chain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = init_inheritance_chain.gif; sourceTree = "<group>"; };
+		11E6058A257FABF2004AE097 /* designatedinitializer-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "designatedinitializer-1.gif"; sourceTree = "<group>"; };
+		11E6058C257FB0B9004AE097 /* traditional_mvc.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = traditional_mvc.gif; sourceTree = "<group>"; };
+		11E6058E257FB0F3004AE097 /* cocoa_mvc.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cocoa_mvc.gif; sourceTree = "<group>"; };
+		11E60590257FB1BE004AE097 /* cocoa_mvc_coord.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cocoa_mvc_coord.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +339,14 @@
 				1181E4C1257CB1200079C79D /* Target-Action.m */,
 				1181E4C3257CB13E0079C79D /* Toll-Free Bridging.h */,
 				1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */,
+				11E60590257FB1BE004AE097 /* cocoa_mvc_coord.gif */,
+				11E6058E257FB0F3004AE097 /* cocoa_mvc.gif */,
+				11E6058C257FB0B9004AE097 /* traditional_mvc.gif */,
+				11E6058A257FABF2004AE097 /* designatedinitializer-1.gif */,
+				11E60588257FABEC004AE097 /* init_inheritance_chain.gif */,
+				11E60500257F30F0004AE097 /* delegation2.jpg */,
+				11E604FE257F30BB004AE097 /* delegation1.jpg */,
+				11E604FC257F1BFE004AE097 /* compositeobject.gif */,
 				1177E446257E2EC50003579F /* cluster3.gif */,
 				1177E444257E2DEC0003579F /* cluster2.gif */,
 				1177E442257E2D040003579F /* cluster1.gif */,
@@ -535,15 +559,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E604FD257F1BFF004AE097 /* compositeobject.gif in Resources */,
+				11E60591257FB1BE004AE097 /* cocoa_mvc_coord.gif in Resources */,
 				113D0FB02578D04F004964F2 /* highmidlow.gif in Resources */,
 				11479CBE256CA52000AF877E /* README in Resources */,
 				113DFBE82574920F00E945F5 /* layout.png in Resources */,
+				11E60501257F30F0004AE097 /* delegation2.jpg in Resources */,
 				119E09E124444ECD003FB6F2 /* LaunchScreen.storyboard in Resources */,
 				119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */,
+				11E6058D257FB0B9004AE097 /* traditional_mvc.gif in Resources */,
 				1177E447257E2EC50003579F /* cluster3.gif in Resources */,
 				11D97F6F2562837600781528 /* methodEncoding.png in Resources */,
 				113D0FA92578C2B4004964F2 /* cellhierarchy.gif in Resources */,
 				1177E445257E2DEC0003579F /* cluster2.gif in Resources */,
+				11E60589257FABEC004AE097 /* init_inheritance_chain.gif in Resources */,
+				11E6058F257FB0F3004AE097 /* cocoa_mvc.gif in Resources */,
 				1177E443257E2D050003579F /* cluster1.gif in Resources */,
 				11142B8924A04D890004B482 /* README.md in Resources */,
 				114CE8402563CFFA00179FC2 /* memory_management_2x.png in Resources */,
@@ -553,6 +583,8 @@
 				113D0FAE2578CEB8004964F2 /* scopeinstvariables.gif in Resources */,
 				11D97F6D256282D200781528 /* encoding.png in Resources */,
 				114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */,
+				11E604FF257F30BB004AE097 /* delegation1.jpg in Resources */,
+				11E6058B257FABF2004AE097 /* designatedinitializer-1.gif in Resources */,
 				113D0FA52578BCE3004964F2 /* graphichierarchy.gif in Resources */,
 				11D97F732562858F00781528 /* PropertyAttributeDescriptionExamples.png in Resources */,
 				119E09DC24444ECB003FB6F2 /* Main.storyboard in Resources */,

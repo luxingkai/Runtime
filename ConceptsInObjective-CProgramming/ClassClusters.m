@@ -230,6 +230,261 @@
      primitive methods, count and objectAtIndex:. With these methods
      as a base, other methods.
      
+     Table 1-2  Derived methods and their possible implementations
+     
+     Derived Method                          Possible Implementation
+     ===============================================================
+     lastObject                  Find the last object by sending the array
+                                 object this message: [self objectAtIndex:
+                                 ([self count] –1)].
+     containsObject              Find an object by repeatedly sending the
+                                 array object an objectAtIndex: message,
+                                 each time incrementing the index until
+                                 all objects in the array have been tested.
+     ===============================================================
+     
+     The division of an interface between primitive and derived methods
+     makes creating subclasses easier. Your subclass must override inherited
+     primitives, but having done so can be sure that all derived methods
+     that it inherits will operate properly.
+     
+     The primitive-derived distinction applies to the interface of a
+     fully initialized object. The question of how init... methods
+     should be handled in a subclass also needs to be addressed.
+     
+     In general, a cluster's abstract superclass declares a number
+     of init... and + className methods. As described in Creating
+     Instance, the abstract class decides which concrete subclass
+     to instantiate based your choice of init... or + className
+     method. You can consider that the abstract class declares these
+     methods for the convenience of the subclass. Since the abstract
+     class has no instance variables, it has no need of initialization
+     methods.
+     
+     You subclass should declare its own init... (if it needs to
+     initialize its instance variables) and possibly + className
+     methods. It should not rely on any of those that it inherits.
+     To maintain its link in the initialization chain, it should
+     invoke its superclass's designated initializer within its own
+     designated initializer method. It should also override all
+     other inherited initializer methods and implement them to
+     behave in a reasonable manner. Within a class cluster, the
+     designated initializer of the abstract superclass is always
+     init.
+     */
+    
+    /**
+     True Subclasses: An Example
+        
+     Let's say that you want to create a subclass of NSArray,
+     named MonthArray, that returns the name of a month given
+     its index position. However, a MonthArray object won't
+     actually store the array of month names as an instance
+     variable. Instead, the method that returns a name given
+     an index position (objectAtIndex:) will return constant
+     strings. Thus, only twelve string objects will be allocated,
+     no matter how many MonthArray objects exist in an application.
+     
+     The MonthArray class is declared as:
+     ================================================
+     #import <foundation/foundation.h>
+     @interface MonthArray : NSArray
+     {
+     }
+      
+     + monthArray;
+     - (unsigned)count;
+     - (id)objectAtIndex:(unsigned)index;
+      
+     @end
+     ================================================
+
+     Note that the MonthArray class doesn't declare an init...
+     method because it has no instance variables to intialize.
+     The count and objectAtIndex: methods simply cover the
+     inherited primitive methods, as described above.
+     
+     The implementation of the MonthArray class looks like this:
+     ================================================
+     #import "MonthArray.h"
+      
+     @implementation MonthArray
+      
+     static MonthArray *sharedMonthArray = nil;
+     static NSString *months[] = { @"January", @"February", @"March",
+         @"April", @"May", @"June", @"July", @"August", @"September",
+         @"October", @"November", @"December" };
+      
+     + monthArray
+     {
+         if (!sharedMonthArray) {
+             sharedMonthArray = [[MonthArray alloc] init];
+         }
+         return sharedMonthArray;
+     }
+      
+     - (unsigned)count
+     {
+      return 12;
+     }
+      
+     - objectAtIndex:(unsigned)index
+     {
+         if (index >= [self count])
+             [NSException raise:NSRangeException format:@"***%s: index
+                 (%d) beyond bounds (%d)", sel_getName(_cmd), index,
+                 [self count] - 1];
+         else
+             return months[index];
+     }
+      
+     @end
+     ================================================
+
+     Because MonthArray overrides the inherited primitive methods,
+     the derived methods that it inherits will work properly
+     without being overridden. NSArray's lastObject, containsObject:,
+     sortedArrayUsingSelector:, objectEnumerator, and other methods
+     work without problems for MonthArray objects.
+     */
+    
+    /**
+     A composite Object
+     
+     By embedding a private cluster object in an object of your
+     own design, you create a composite object. This composite object
+     can rely on the cluster object for its basis functionality, only
+     intercepting messages that the composite object wants to handle
+     in some particular way. This architecture reduces the amount of
+     code you must write and lets you take advantage of the tested code
+     provided by the Foundation Framework. Figure 1-4 depicts this
+     architecture.
+     
+     Figure 1-4 An object that embeds a cluster object
+     file:///Users/tigerfly/Desktop/Runtime/ConceptsInObjective-CProgramming/compositeobject.gif
+     
+     The composite object must declare itself to be a subclass of the
+     cluster's abstract superclass. As a subclass, it must override
+     the superclass's primitive methods. It can also override derived
+     methods, but this isn't necessary because the derived methods
+     work through the primitive ones.
+     
+     The count method of the NSArray class is an example; the intervening
+     object's implementation of a method it overrides can be as simple
+     as:
+     ================================================
+     - (unsigned)count {
+         return [embeddedObject count];
+     }
+     ================================================
+     
+     However, your object could put code for its own purposes in the
+     implementation of any method it overrides.
+     */
+    
+    /**
+     A composite Object: An Example
+     
+     To illustrate the use of a composite object, imagine you want a
+     mutable array object that tests changes against some validation
+     criteria before allowing any modification to the array's contents.
+     The example that follows describes a class called ValidatingArray,
+     which contains a standard mutable array object. ValidatingArray
+     overrides all of the primitive methods declared in its superclasses,
+     NSArray and NSMutableArray. It also declares the array,
+     validatingArray, and init methods, which can be used to create
+     and initialize an instance:
+     ================================================
+     #import <foundation/foundation.h>
+      
+     @interface ValidatingArray : NSMutableArray
+     {
+         NSMutableArray *embeddedArray;
+     }
+      
+     + validatingArray;
+     - init;
+     - (unsigned)count;
+     - objectAtIndex:(unsigned)index;
+     - (void)addObject:object;
+     - (void)replaceObjectAtIndex:(unsigned)index withObject:object;
+     - (void)removeLastObject;
+     - (void)insertObject:object atIndex:(unsigned)index;
+     - (void)removeObjectAtIndex:(unsigned)index;
+      
+     @end
+     ================================================
+
+     The implementation file shows how, in an init method of the
+     ValidatingArrayclass , the embedded object is created and
+     assigned to the embeddedArray variable. Messages that simply
+     access the array but don’t modify its contents are relayed
+     to the embedded object. Messages that could change the
+     contents are scrutinized (here in pseudocode) and relayed
+     only if they pass the hypothetical validation test.
+     ================================================
+     #import "ValidatingArray.h"
+      
+     @implementation ValidatingArray
+      
+     - init
+     {
+         self = [super init];
+         if (self) {
+             embeddedArray = [[NSMutableArray allocWithZone:[self zone]] init];
+         }
+         return self;
+     }
+      
+     + validatingArray
+     {
+         return [[[self alloc] init] autorelease];
+     }
+      
+     - (unsigned)count
+     {
+         return [embeddedArray count];
+     }
+      
+     - objectAtIndex:(unsigned)index
+     {
+         return [embeddedArray objectAtIndex:index];
+     }
+      
+     - (void)addObject:object
+     {
+         if (// modification is valid //) {
+             [embeddedArray addObject:object];
+         }
+     }
+      
+     - (void)replaceObjectAtIndex:(unsigned)index withObject:object;
+     {
+         if (// modification is valid //) {
+             [embeddedArray replaceObjectAtIndex:index withObject:object];
+         }
+     }
+      
+     - (void)removeLastObject;
+     {
+         if (// modification is valid //) {
+             [embeddedArray removeLastObject];
+         }
+     }
+     - (void)insertObject:object atIndex:(unsigned)index;
+     {
+         if (// modification is valid //) {
+             [embeddedArray insertObject:object atIndex:index];
+         }
+     }
+     - (void)removeObjectAtIndex:(unsigned)index;
+     {
+         if (// modification is valid //) {
+             [embeddedArray removeObjectAtIndex:index];
+         }
+     }
+     ================================================
+     
      */
     
     
