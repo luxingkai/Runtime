@@ -59,6 +59,14 @@
 		1181E4BF257CB10D0079C79D /* ReceptionistPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4BE257CB10D0079C79D /* ReceptionistPattern.m */; };
 		1181E4C2257CB1200079C79D /* Target-Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4C1257CB1200079C79D /* Target-Action.m */; };
 		1181E4C5257CB13E0079C79D /* Toll-Free Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */; };
+		11846B082580676900D183A3 /* employee_management_app.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11846B072580676900D183A3 /* employee_management_app.gif */; };
+		11846B0A25806C6A00D183A3 /* employeetable.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11846B0925806C6A00D183A3 /* employeetable.gif */; };
+		11846B0C25806FB100D183A3 /* relationship_cardinality.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11846B0B25806FB100D183A3 /* relationship_cardinality.gif */; };
+		11846B0E2580706A00D183A3 /* object_graph.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11846B0D2580706A00D183A3 /* object_graph.gif */; };
+		11846B10258070AE00D183A3 /* employeedepttable.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11846B0F258070AE00D183A3 /* employeedepttable.gif */; };
+		11846B152580C36100D183A3 /* receptionist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11846B142580C36100D183A3 /* receptionist.jpg */; };
+		11846B172580CB4D00D183A3 /* target_action.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11846B162580CB4D00D183A3 /* target_action.gif */; };
+		11846B192580D2CB00D183A3 /* toll-free.png in Resources */ = {isa = PBXBuildFile; fileRef = 11846B182580D2CB00D183A3 /* toll-free.png */; };
 		119E09D324444ECB003FB6F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09D224444ECB003FB6F2 /* AppDelegate.m */; };
 		119E09DC24444ECB003FB6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119E09DA24444ECB003FB6F2 /* Main.storyboard */; };
 		119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119E09DD24444ECD003FB6F2 /* Assets.xcassets */; };
@@ -192,6 +200,14 @@
 		1181E4C1257CB1200079C79D /* Target-Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Target-Action.m"; sourceTree = "<group>"; };
 		1181E4C3257CB13E0079C79D /* Toll-Free Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toll-Free Bridging.h"; sourceTree = "<group>"; };
 		1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Toll-Free Bridging.m"; sourceTree = "<group>"; };
+		11846B072580676900D183A3 /* employee_management_app.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = employee_management_app.gif; sourceTree = "<group>"; };
+		11846B0925806C6A00D183A3 /* employeetable.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = employeetable.gif; sourceTree = "<group>"; };
+		11846B0B25806FB100D183A3 /* relationship_cardinality.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = relationship_cardinality.gif; sourceTree = "<group>"; };
+		11846B0D2580706A00D183A3 /* object_graph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = object_graph.gif; sourceTree = "<group>"; };
+		11846B0F258070AE00D183A3 /* employeedepttable.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = employeedepttable.gif; sourceTree = "<group>"; };
+		11846B142580C36100D183A3 /* receptionist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = receptionist.jpg; sourceTree = "<group>"; };
+		11846B162580CB4D00D183A3 /* target_action.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = target_action.gif; sourceTree = "<group>"; };
+		11846B182580D2CB00D183A3 /* toll-free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toll-free.png"; sourceTree = "<group>"; };
 		119E09CE24444ECB003FB6F2 /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119E09D124444ECB003FB6F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		119E09D224444ECB003FB6F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -339,6 +355,14 @@
 				1181E4C1257CB1200079C79D /* Target-Action.m */,
 				1181E4C3257CB13E0079C79D /* Toll-Free Bridging.h */,
 				1181E4C4257CB13E0079C79D /* Toll-Free Bridging.m */,
+				11846B182580D2CB00D183A3 /* toll-free.png */,
+				11846B162580CB4D00D183A3 /* target_action.gif */,
+				11846B142580C36100D183A3 /* receptionist.jpg */,
+				11846B0F258070AE00D183A3 /* employeedepttable.gif */,
+				11846B0D2580706A00D183A3 /* object_graph.gif */,
+				11846B0B25806FB100D183A3 /* relationship_cardinality.gif */,
+				11846B0925806C6A00D183A3 /* employeetable.gif */,
+				11846B072580676900D183A3 /* employee_management_app.gif */,
 				11E60590257FB1BE004AE097 /* cocoa_mvc_coord.gif */,
 				11E6058E257FB0F3004AE097 /* cocoa_mvc.gif */,
 				11E6058C257FB0B9004AE097 /* traditional_mvc.gif */,
@@ -561,19 +585,24 @@
 			files = (
 				11E604FD257F1BFF004AE097 /* compositeobject.gif in Resources */,
 				11E60591257FB1BE004AE097 /* cocoa_mvc_coord.gif in Resources */,
+				11846B10258070AE00D183A3 /* employeedepttable.gif in Resources */,
+				11846B0C25806FB100D183A3 /* relationship_cardinality.gif in Resources */,
 				113D0FB02578D04F004964F2 /* highmidlow.gif in Resources */,
 				11479CBE256CA52000AF877E /* README in Resources */,
 				113DFBE82574920F00E945F5 /* layout.png in Resources */,
 				11E60501257F30F0004AE097 /* delegation2.jpg in Resources */,
 				119E09E124444ECD003FB6F2 /* LaunchScreen.storyboard in Resources */,
 				119E09DE24444ECD003FB6F2 /* Assets.xcassets in Resources */,
+				11846B172580CB4D00D183A3 /* target_action.gif in Resources */,
 				11E6058D257FB0B9004AE097 /* traditional_mvc.gif in Resources */,
 				1177E447257E2EC50003579F /* cluster3.gif in Resources */,
 				11D97F6F2562837600781528 /* methodEncoding.png in Resources */,
 				113D0FA92578C2B4004964F2 /* cellhierarchy.gif in Resources */,
 				1177E445257E2DEC0003579F /* cluster2.gif in Resources */,
 				11E60589257FABEC004AE097 /* init_inheritance_chain.gif in Resources */,
+				11846B192580D2CB00D183A3 /* toll-free.png in Resources */,
 				11E6058F257FB0F3004AE097 /* cocoa_mvc.gif in Resources */,
+				11846B082580676900D183A3 /* employee_management_app.gif in Resources */,
 				1177E443257E2D050003579F /* cluster1.gif in Resources */,
 				11142B8924A04D890004B482 /* README.md in Resources */,
 				114CE8402563CFFA00179FC2 /* memory_management_2x.png in Resources */,
@@ -583,10 +612,13 @@
 				113D0FAE2578CEB8004964F2 /* scopeinstvariables.gif in Resources */,
 				11D97F6D256282D200781528 /* encoding.png in Resources */,
 				114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */,
+				11846B0E2580706A00D183A3 /* object_graph.gif in Resources */,
 				11E604FF257F30BB004AE097 /* delegation1.jpg in Resources */,
 				11E6058B257FABF2004AE097 /* designatedinitializer-1.gif in Resources */,
 				113D0FA52578BCE3004964F2 /* graphichierarchy.gif in Resources */,
 				11D97F732562858F00781528 /* PropertyAttributeDescriptionExamples.png in Resources */,
+				11846B152580C36100D183A3 /* receptionist.jpg in Resources */,
+				11846B0A25806C6A00D183A3 /* employeetable.gif in Resources */,
 				119E09DC24444ECB003FB6F2 /* Main.storyboard in Resources */,
 				113D0FA72578BE18004964F2 /* graphicinstvars.gif in Resources */,
 			);
