@@ -124,7 +124,7 @@
      In the example above, one abstract public class declares the
      interface for multiple private subclasses. This is a class
      cluster in the purest sense. It's also possible, and often
-     desirablem to have two (or possibly more) abstract public
+     desirable to have two (or possibly more) abstract public
      classes that declare the interface for the cluster. This is
      evident in the Foundation framework, which includes the
      clusters listed in Table 1-1.

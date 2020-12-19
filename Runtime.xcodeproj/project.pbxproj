@@ -74,6 +74,7 @@
 		119E09E424444ECD003FB6F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09E324444ECD003FB6F2 /* main.m */; };
 		119E09EE24444ECD003FB6F2 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09ED24444ECD003FB6F2 /* RuntimeTests.m */; };
 		119E09F924444ECD003FB6F2 /* RuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09F824444ECD003FB6F2 /* RuntimeUITests.m */; };
+		11C8C39D258DEC8900C5DD64 /* Objective-CRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C39C258DEC8900C5DD64 /* Objective-CRuntime.m */; };
 		11D97F5B25622FB500781528 /* Messaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F5A25622FB500781528 /* Messaging.m */; };
 		11D97F5E25622FEC00781528 /* DynamicMethodResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F5D25622FEC00781528 /* DynamicMethodResolution.m */; };
 		11D97F612562300700781528 /* MessageForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F602562300700781528 /* MessageForwarding.m */; };
@@ -222,6 +223,8 @@
 		119E09F424444ECD003FB6F2 /* RuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119E09F824444ECD003FB6F2 /* RuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUITests.m; sourceTree = "<group>"; };
 		119E09FA24444ECD003FB6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C8C39B258DEC8900C5DD64 /* Objective-CRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CRuntime.h"; sourceTree = "<group>"; };
+		11C8C39C258DEC8900C5DD64 /* Objective-CRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Objective-CRuntime.m"; sourceTree = "<group>"; };
 		11D97F5925622FB500781528 /* Messaging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Messaging.h; sourceTree = "<group>"; };
 		11D97F5A25622FB500781528 /* Messaging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Messaging.m; sourceTree = "<group>"; };
 		11D97F5C25622FEC00781528 /* DynamicMethodResolution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMethodResolution.h; sourceTree = "<group>"; };
@@ -438,6 +441,8 @@
 				1148E58B256761270002372F /* KVO.m */,
 				1148E58D256761340002372F /* KVC.h */,
 				1148E58E256761340002372F /* KVC.m */,
+				11C8C39B258DEC8900C5DD64 /* Objective-CRuntime.h */,
+				11C8C39C258DEC8900C5DD64 /* Objective-CRuntime.m */,
 				113D0FAF2578D04F004964F2 /* highmidlow.gif */,
 				113D0FAD2578CEB8004964F2 /* scopeinstvariables.gif */,
 				113D0FA82578C2B4004964F2 /* cellhierarchy.gif */,
@@ -669,6 +674,7 @@
 				1181E4A7257CB05D0079C79D /* DelegatesAndDataSources.m in Sources */,
 				113D0FC02578D350004964F2 /* FastEnumeration.m in Sources */,
 				1181E4BF257CB10D0079C79D /* ReceptionistPattern.m in Sources */,
+				11C8C39D258DEC8900C5DD64 /* Objective-CRuntime.m in Sources */,
 				11D97F642562301700781528 /* TypeEncodings.m in Sources */,
 				1181E4C5257CB13E0079C79D /* Toll-Free Bridging.m in Sources */,
 				1148E58F256761340002372F /* KVC.m in Sources */,
