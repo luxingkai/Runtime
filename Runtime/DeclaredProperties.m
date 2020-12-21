@@ -31,6 +31,7 @@
      declared properties is available for each class and protocol.
      */
     
+    
     /**
      Property Type and Functions
      

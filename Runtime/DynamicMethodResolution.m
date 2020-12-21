@@ -79,6 +79,7 @@
      */
     
     
+    
     /**
      Dynamic Loading
      
@@ -122,7 +123,6 @@ void dynamicMethodIMP(id self, SEL __cmd) {
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)aSEL {
-    NSLog(@"%@",NSStringFromSelector(aSEL));
     if(aSEL == @selector(viewDidLoad)) {
        class_addMethod([self class], aSEL, (IMP)dynamicMethodIMP, "v@:");
        return YES;
@@ -130,11 +130,10 @@ void dynamicMethodIMP(id self, SEL __cmd) {
    return [super resolveInstanceMethod:aSEL];
 }
 
-//+ (BOOL)resolveClassMethod:(SEL)sel {
-//    NSLog(@"%@",NSStringFromSelector(sel));
-//
-//    return YES;
-//}
++ (BOOL)resolveClassMethod:(SEL)sel {
+    
+    return YES;
+}
                        
 
 
