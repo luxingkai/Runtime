@@ -41,6 +41,10 @@
 		114CE83E2563CD7B00179FC2 /* AdvancedMemoryManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */; };
 		114CE8402563CFFA00179FC2 /* memory_management_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE83F2563CFFA00179FC2 /* memory_management_2x.png */; };
 		114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE8412563F57800179FC2 /* retaincycles_2x.png */; };
+		11609449259322C700C16D66 /* MemoryManagementForCoreFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11609448259322C700C16D66 /* MemoryManagementForCoreFoundation.m */; };
+		1160944B25933E7900C16D66 /* bigendian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1160944A25933E7800C16D66 /* bigendian.gif */; };
+		1160944D25933EA600C16D66 /* littleendian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1160944C25933EA600C16D66 /* littleendian.gif */; };
+		1160944F259341B300C16D66 /* longl2bswap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1160944E259341B300C16D66 /* longl2bswap.gif */; };
 		1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */; };
 		1162AB98255FD3F200D6D099 /* InteractWithRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162AB97255FD3F200D6D099 /* InteractWithRuntime.m */; };
 		1177E443257E2D050003579F /* cluster1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1177E442257E2D040003579F /* cluster1.gif */; };
@@ -168,6 +172,11 @@
 		114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedMemoryManagement.m; sourceTree = "<group>"; };
 		114CE83F2563CFFA00179FC2 /* memory_management_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory_management_2x.png; sourceTree = "<group>"; };
 		114CE8412563F57800179FC2 /* retaincycles_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retaincycles_2x.png; sourceTree = "<group>"; };
+		11609447259322C700C16D66 /* MemoryManagementForCoreFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManagementForCoreFoundation.h; sourceTree = "<group>"; };
+		11609448259322C700C16D66 /* MemoryManagementForCoreFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementForCoreFoundation.m; sourceTree = "<group>"; };
+		1160944A25933E7800C16D66 /* bigendian.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bigendian.gif; sourceTree = "<group>"; };
+		1160944C25933EA600C16D66 /* littleendian.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = littleendian.gif; sourceTree = "<group>"; };
+		1160944E259341B300C16D66 /* longl2bswap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = longl2bswap.gif; sourceTree = "<group>"; };
 		1162AB93255FD04500D6D099 /* RuntimeVersionsPlatforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeVersionsPlatforms.h; sourceTree = "<group>"; };
 		1162AB94255FD04500D6D099 /* RuntimeVersionsPlatforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeVersionsPlatforms.m; sourceTree = "<group>"; };
 		1162AB96255FD3F200D6D099 /* InteractWithRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractWithRuntime.h; sourceTree = "<group>"; };
@@ -435,6 +444,8 @@
 				114CE83A25639C4E00179FC2 /* MemoryManagement.m */,
 				114CE83C2563CD7B00179FC2 /* AdvancedMemoryManagement.h */,
 				114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */,
+				11609447259322C700C16D66 /* MemoryManagementForCoreFoundation.h */,
+				11609448259322C700C16D66 /* MemoryManagementForCoreFoundation.m */,
 				1144CDE725663FE30018E831 /* StackHeap.h */,
 				1144CDE825663FE30018E831 /* StackHeap.m */,
 				1148E58A256761270002372F /* KVO.h */,
@@ -443,6 +454,9 @@
 				1148E58E256761340002372F /* KVC.m */,
 				11C8C39B258DEC8900C5DD64 /* Objective-CRuntime.h */,
 				11C8C39C258DEC8900C5DD64 /* Objective-CRuntime.m */,
+				1160944E259341B300C16D66 /* longl2bswap.gif */,
+				1160944C25933EA600C16D66 /* littleendian.gif */,
+				1160944A25933E7800C16D66 /* bigendian.gif */,
 				113D0FAF2578D04F004964F2 /* highmidlow.gif */,
 				113D0FAD2578CEB8004964F2 /* scopeinstvariables.gif */,
 				113D0FA82578C2B4004964F2 /* cellhierarchy.gif */,
@@ -588,6 +602,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1160944B25933E7900C16D66 /* bigendian.gif in Resources */,
+				1160944D25933EA600C16D66 /* littleendian.gif in Resources */,
 				11E604FD257F1BFF004AE097 /* compositeobject.gif in Resources */,
 				11E60591257FB1BE004AE097 /* cocoa_mvc_coord.gif in Resources */,
 				11846B10258070AE00D183A3 /* employeedepttable.gif in Resources */,
@@ -606,6 +622,7 @@
 				1177E445257E2DEC0003579F /* cluster2.gif in Resources */,
 				11E60589257FABEC004AE097 /* init_inheritance_chain.gif in Resources */,
 				11846B192580D2CB00D183A3 /* toll-free.png in Resources */,
+				1160944F259341B300C16D66 /* longl2bswap.gif in Resources */,
 				11E6058F257FB0F3004AE097 /* cocoa_mvc.gif in Resources */,
 				11846B082580676900D183A3 /* employee_management_app.gif in Resources */,
 				1177E443257E2D050003579F /* cluster1.gif in Resources */,
@@ -693,6 +710,7 @@
 				1162AB95255FD04500D6D099 /* RuntimeVersionsPlatforms.m in Sources */,
 				114CE82F2563709C00179FC2 /* KeyValueCoding.m in Sources */,
 				114CE83225637F1B00179FC2 /* CopingController.m in Sources */,
+				11609449259322C700C16D66 /* MemoryManagementForCoreFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

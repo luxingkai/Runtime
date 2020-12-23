@@ -172,13 +172,15 @@
     
     /**
      A Simple Example
-     
+     ================================================================
      to illustrate the policy, consider the following code fragment:
      {
         Person *person = [[Person alloc] init];
         NSString *name = person.fullName;
         [person release];
      }
+     ================================================================
+
      The Person object is created using the alloc method, so it is
      subsequently sent a release message when it is no longer needed.
      The person's name is not retrieved using any of the owning methods,
@@ -192,13 +194,13 @@
      You use autorelease when you need to send a deferred release
      message -- typically when returning an object from a method.
      For example, you could implement the fullName method like this:
-     
+     ================================================================
      - (NSString *)fullName {
          NSString *string = [[[NSString alloc] initWithFormat:@"%@ %@",
                                                self.firstName, self.lastName] autorelease];
          return string;
      }
-     
+     ================================================================
      You own the string returned by alloc. To abide by the memory
      management rules, you must relinquish ownership of the string
      before you lose the reference to it. If you use release,
@@ -207,14 +209,14 @@
      autorelease, you signify that you want to relinquish ownership,
      but you allow the caller of the method to use the returned
      string before it is deallocated.
-
+     ================================================================
      You could also implement the fullName method like this:
      - (NSString *)fullName {
          NSString *string = [NSString stringWithFormat:@"%@ %@",
                                       self.firstName, self.lastName];
          return string;
      }
-     
+     ================================================================
      Following the basic rules, you don’t own the string returned
      by stringWithFormat:, so you can safely return the string
      from the method.
