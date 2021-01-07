@@ -60,17 +60,18 @@
         situations be helpful.
      */
     
+    
     /**
      Good Practices Prevent Memory-Related Problems
      
-     There are two main kinds of problem that result from incorrent
+     There are two main kinds of problem that result from incorrect
      memory management:
      •  Freeing or overwriting data that is still in use
         This causes memory corruption, and typically results in your
         application crashing, or worse, corrupted user data.
-     •  Not freeing data that is no longer in use causes memory leaks
+     •  Not freeing data that is no longer in use causes memory leaks.
         A memory leak is where allocated memory is not freed, even
-        though it is never uesd again. Leaks cause your application
+        though it is never used again. Leaks cause your application
         to use ever-increasing amounts of memory, which in turn may
         result in poor system performance or your application being
         terminated.
@@ -80,7 +81,7 @@
      tend to consider memory management in terms of the implemention
      details rather than in terms of your actual goals. Instead, you
      should think of memory management from the perspective of object
-     onwership and object graphs.
+     ownership and object graphs.
      
      Cocoa uses a straightforward naming convention to indicate when
      you own an object returned by a method.
@@ -124,6 +125,7 @@
      
      */
     
+    
 #pragma mark -- Memory Management Policy
     
     /**
@@ -131,12 +133,15 @@
      
      the basic model used for memory management in a reference-counted
      environment is provided by a combination of methods defined in
+     
+     
      the NSObject protocol and a standard method naming convention.
      The NSObject class also defines a method, dealloc, this is invoked
      automatically when an object is deallocated. This article describles
      all the basic rules you need to know to manage memory corrently in a
      Cocoa program, and provides some examples of correct usage.
      */
+    
     
     /**
      Basic Memory Management Rules
@@ -146,6 +151,7 @@
      owner, it continues to exist. If an object has no owners, the runtime
      system destroys it automatcally. To make sure it is clear when you own
      an object and when you do not, Cocoa sets the following policy:
+     
      •  You own any object you create
         You create an object using a method whose name begins with “alloc”,
         “new”, “copy”, or “mutableCopy” (for example, alloc, newObject,
@@ -169,6 +175,7 @@
         This is just corollary of the previous policy rules, stated
         explicitly.
      */
+    
     
     /**
      A Simple Example
@@ -905,6 +912,9 @@
      exit. You can test whether Cocoa is in multithreading
      mode with the NSThread class method isMultiThreaded.
      */
+    
+    
+    
     
 }
 

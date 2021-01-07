@@ -41,6 +41,7 @@
 		114CE83E2563CD7B00179FC2 /* AdvancedMemoryManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */; };
 		114CE8402563CFFA00179FC2 /* memory_management_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE83F2563CFFA00179FC2 /* memory_management_2x.png */; };
 		114CE8422563F57800179FC2 /* retaincycles_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114CE8412563F57800179FC2 /* retaincycles_2x.png */; };
+		11508DBD25A6F6B0005DBB5D /* OperatingSystemMemoryManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11508DBC25A6F6B0005DBB5D /* OperatingSystemMemoryManagement.m */; };
 		11609449259322C700C16D66 /* MemoryManagementForCoreFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11609448259322C700C16D66 /* MemoryManagementForCoreFoundation.m */; };
 		1160944B25933E7900C16D66 /* bigendian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1160944A25933E7800C16D66 /* bigendian.gif */; };
 		1160944D25933EA600C16D66 /* littleendian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1160944C25933EA600C16D66 /* littleendian.gif */; };
@@ -172,6 +173,8 @@
 		114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedMemoryManagement.m; sourceTree = "<group>"; };
 		114CE83F2563CFFA00179FC2 /* memory_management_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory_management_2x.png; sourceTree = "<group>"; };
 		114CE8412563F57800179FC2 /* retaincycles_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retaincycles_2x.png; sourceTree = "<group>"; };
+		11508DBB25A6F6B0005DBB5D /* OperatingSystemMemoryManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperatingSystemMemoryManagement.h; sourceTree = "<group>"; };
+		11508DBC25A6F6B0005DBB5D /* OperatingSystemMemoryManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperatingSystemMemoryManagement.m; sourceTree = "<group>"; };
 		11609447259322C700C16D66 /* MemoryManagementForCoreFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManagementForCoreFoundation.h; sourceTree = "<group>"; };
 		11609448259322C700C16D66 /* MemoryManagementForCoreFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementForCoreFoundation.m; sourceTree = "<group>"; };
 		1160944A25933E7800C16D66 /* bigendian.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bigendian.gif; sourceTree = "<group>"; };
@@ -446,6 +449,8 @@
 				114CE83D2563CD7B00179FC2 /* AdvancedMemoryManagement.m */,
 				11609447259322C700C16D66 /* MemoryManagementForCoreFoundation.h */,
 				11609448259322C700C16D66 /* MemoryManagementForCoreFoundation.m */,
+				11508DBB25A6F6B0005DBB5D /* OperatingSystemMemoryManagement.h */,
+				11508DBC25A6F6B0005DBB5D /* OperatingSystemMemoryManagement.m */,
 				1144CDE725663FE30018E831 /* StackHeap.h */,
 				1144CDE825663FE30018E831 /* StackHeap.m */,
 				1148E58A256761270002372F /* KVO.h */,
@@ -680,6 +685,7 @@
 				119E09E424444ECD003FB6F2 /* main.m in Sources */,
 				11D97F5E25622FEC00781528 /* DynamicMethodResolution.m in Sources */,
 				113D0FC62578D378004964F2 /* Selectors.m in Sources */,
+				11508DBD25A6F6B0005DBB5D /* OperatingSystemMemoryManagement.m in Sources */,
 				114CE8352563957900179FC2 /* ValueWrappersTransformations.m in Sources */,
 				113D0FCC2578D462004964F2 /* Threading.m in Sources */,
 				114CE8382563964100179FC2 /* Invocations.m in Sources */,

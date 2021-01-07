@@ -38,6 +38,9 @@
 //Digital Image Processing
 //https://www.tutorialspoint.com/dip/image_processing_introduction.htm
 
+// Cocoa Core Competencies
+//https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49-SW1
+
 @interface AppDelegate ()
 
 @end
