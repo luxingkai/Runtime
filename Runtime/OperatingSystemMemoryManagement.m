@@ -82,7 +82,6 @@
             to location 10100.
         •   The user program deals with virtual addresses; it never
             sees the real physical addresses.
-
      
      */
     

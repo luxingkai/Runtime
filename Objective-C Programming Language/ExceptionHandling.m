@@ -89,6 +89,8 @@
      ==========================================================
      */
     
+   
+    
     
 #pragma mark -- Catching Different Types of Exception
 
@@ -169,7 +171,15 @@
      communications exceptions.
      */
     
+    NSArray *array = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4", nil];
     
+    @try {
+       NSString *result = array[5];
+    } @catch (NSException *exception) {
+        NSLog(@"exception %@",exception);
+    } @finally {
+        NSLog(@"%@",array);
+    }
     
     
 }

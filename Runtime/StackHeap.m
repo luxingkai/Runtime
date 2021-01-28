@@ -23,6 +23,7 @@
     
     
 #pragma mark --
+    
     /*
      Stack VS Heap
      
@@ -313,6 +314,7 @@
      that are only require until the function using them is alive.
      Then you need to use the stack, which is faster and easier.
      */
+    
     
     
 #pragma mark -- Memory Management

@@ -133,8 +133,6 @@
      
      the basic model used for memory management in a reference-counted
      environment is provided by a combination of methods defined in
-     
-     
      the NSObject protocol and a standard method naming convention.
      The NSObject class also defines a method, dealloc, this is invoked
      automatically when an object is deallocated. This article describles
@@ -195,6 +193,7 @@
      example uses release rather than autorelease.
      */
     
+    
     /**
      Use autorelease to Send a Deferred release
      
@@ -240,8 +239,8 @@
      that the caller of the fullName method owns the returned string.
      The caller therefore has no reason to release the returned string,
      and it will thus be leaked.
-     
      */
+    
     
     /*
      You Don’t Own Objects Returned by Reference
@@ -329,7 +328,9 @@
      you are not responsible for relinquishing ownership of myInstance:
      =========================================
      MyClass *myInstance = [MyClass createInstance];
+     
      */
+    
     
     
 #pragma mark -- Practical Memory Management
@@ -341,8 +342,8 @@
      and to help to ensure your program remains reliable and
      robust while at the same time minimizing its resource
      requirements.
-     
      */
+    
     
     /**
      Use Accessor Methods to Make Memory Management Easier
@@ -556,8 +557,8 @@
      to remove the delegate link by sending a setDelegate: message
      with a nil argument to the other object. These messages are
      normally sent from the object’s dealloc method.
-
      */
+    
     
     /**
      Avoid Causing Deallocation of Objects You’re Using
@@ -749,6 +750,7 @@
      it is beneficial to do so.
      */
     
+    
     /**
      About Autorelease Pool Blocks
      An autorelease pool block is marked using @autoreleasepool,
@@ -811,8 +813,8 @@
      soon as the thread begins executing; otherwise, your
      application will leak objects. (See Autorelease Pool
      Blocks and Threads for details.)
-
      */
+    
     
     /**
      Use Local Autorelease Pool Blocks to Reduce Peak Memory Footprint

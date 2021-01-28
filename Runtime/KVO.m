@@ -70,8 +70,9 @@
      automatic and manual key-value observing, and how to implement
      both.
      
+     
      Next, you must register your observer instance, the Person,
-     with the observed instance, the Account.Person sends an
+     with the observed instance, the Account. Person sends an
      addObserver:forKeyPath:options:context: message to the Account,
      once for each observed key path, naming itself as the observer.
      
@@ -184,7 +185,7 @@
      observing the same key path for different reasons.
      
      A safer and more extensible approach is to use the context to
-     ensure notificationsd you receive are destined for your observer
+     ensure notification you receive are destined for your observer
      and not a superclass.
      
      The address of a uniquely named static variable within your class
@@ -389,8 +390,9 @@
      •  The class emits KVO change notifications for the property.
      •  Dependent keys are registered appropriately (see Registering
         Dependent Keys).
+     
      There are two techniques for ensuring the change notifications
-     are emitted.  Automatic support is provided by NSObject and is
+     are emitted. Automatic support is provided by NSObject and is
      by default available for all properties of a class that are
      key-value coding compliant. Typically, if you follow standard
      Cocoa coding and naming conventions, you can use automatic
@@ -438,7 +440,6 @@
     
     /**
      Manual Change Notification
-
 
      In some cases, you may want control of the notification
      process, for example, to minimize triggering notifications
@@ -712,6 +713,8 @@
      membership. Instead, you should use the class method to determine
      the class of an object instance.
      */
+    
+    
     
     
 }

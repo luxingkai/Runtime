@@ -19,6 +19,15 @@
     // Do any additional setup after loading the view.
     
     
+    @autoreleasepool {
+        
+    }
+    
+    NSObject *object = nil;
+    @synchronized (self) {
+        
+    }
+ 
     /*
      Objective-C provides support for thread synchronization and
      exception handling, which are explained in this chapter and
@@ -47,7 +56,7 @@
      Objective-C object, including self. This Object is known as
      a mutual exclusion semaphore or mutex. It allows a thread
      to lock a section of code to provent its use by other threads.
-     You should use separate semaphores to protect different cirtical
+     You should use separate semaphores to protect different critical
      sections of a program. It's safest to create all the mutual
      exclusion objects before the application becomes multithreaded,
      to avoid race conditions.
@@ -105,7 +114,10 @@
      */
     
     
-    
+    @synchronized (self) {
+        
+        
+    }
     
 }
 
