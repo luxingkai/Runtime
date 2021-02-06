@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     /*
      Class clusters are a design pattern that the Foundation
      framework makes extensive use of. Class clusters group
@@ -33,7 +34,7 @@
 #pragma mark -- Without class Clusters: Simple Concept but Complex interface
     
     /**
-     To illustrate teh class cluster architecture and its benefits,
+     To illustrate the class cluster architecture and its benefits,
      consider the problem of constructing a class hierarchy that
      defines objects to store numbers of different types(char, int,
      float, double). Because numbers of different types have many features
