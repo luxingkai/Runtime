@@ -8,7 +8,10 @@
 
 #import "EnablingStaticBehavior.h"
 
-@interface EnablingStaticBehavior ()
+@interface EnablingStaticBehavior () {
+    float value;
+}
+@property (strong, nullable, nonatomic) NSObject *obj;
 
 @end
 

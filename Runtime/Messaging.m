@@ -29,6 +29,7 @@
      to - you can circumvent dynamic binding.
      */
     
+    
     /**
      The objc_msgSend Function
      
@@ -129,7 +130,7 @@
      
      Although these arguments aren't explicity declared, source code
      can still refer to them (just as it can refer to the receiving
-     object's instance variables). A method refers to the receivi     ng
+     object's instance variables). A method refers to the receiving
      object as self, and to its own selector as _cmd. In the example
      below, _cmd refers to the selector for the strange method and
      self to the object that receives a strange message.

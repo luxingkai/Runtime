@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     
     
+    
     /*
      The Objective-C declared properties feature provides a simple
      way to declare and implement an object's accessor methods.
@@ -28,7 +29,7 @@
      accessor(getter/setter) methods. By using accessor methods,
      you adhere to the principle of encapsulation (See Mechanism
      Of Abstraction in Object-Oriented Programming with Objective-C).
-     You can exercise tight cotrol of the behavior of the getter/
+     You can exercise tight control of the behavior of the getter/
      setter pair and the underlying state management while clients
      of the API remain insulated from the implementation changes.
      
@@ -285,6 +286,7 @@
      attributes. For more about declaring outlet properties,
      see Nib Files.
      */
+    
     
     
     /**

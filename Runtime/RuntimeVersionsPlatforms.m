@@ -53,6 +53,7 @@
     
 }
 
+
 - (void)perform:(NSString *)str, ... {
     
     /*
@@ -83,12 +84,19 @@
      没有调用 va_end，则结果为未定义。
      */
     
+//    va_list list;
+//    va_start(list, str);
+//    char *str_ = va_arg(list, char *);
+//    printf("%s",str_);
+//    va_end(list);
+
+    
     va_list list;
     va_start(list, str);
-    char *str_ = va_arg(list, char *);
-    printf("%s",str_);
+    char *str_1 = va_arg(list, char *);
     va_end(list);
-
+    
+    
 }
 
 /*

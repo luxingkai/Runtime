@@ -24,7 +24,7 @@
      messaging as used and implemented by the Objective-C language.
      It also introduces the Objective-C runtime.
      */
-    
+
     
 #pragma mark -- The Runtime System
     
@@ -81,6 +81,7 @@
      implementations.
      */
     
+    
     /**
      id
      
@@ -117,6 +118,7 @@
      
      the isa variable is frequently referred to as the “isa pointer.”
      */
+    
     
     /**
      Dynamic Typing
@@ -160,6 +162,7 @@
      See Class Types and Enabling Static Behavior.
      */
     
+    
     /**
      Memory Management
 
@@ -185,6 +188,7 @@
         Programming Guide. (Not available for iOS—you cannot access
         this document through the iOS Dev Center.)
      */
+    
     
     
 #pragma mark -- Object Messaging
@@ -324,6 +328,7 @@
      Declared Properties) and is described in Dot Syntax.
     */
     
+    
     /**
      Sending Messages to nil
      
@@ -363,6 +368,7 @@
      }
      =========================================================
      */
+    
     
     /**
      The Receiver’s Instance Variables
@@ -634,6 +640,7 @@
      programmers of the framework.
      */
     
+    
     /**
      The NSObject Class
 
@@ -661,6 +668,7 @@
      the NSObject Protocol Reference.
      */
     
+    
     /**
      Inheriting Instance Variables
      
@@ -687,6 +695,7 @@
      variables of its own.
      */
     
+    
     /**
      Inheriting Methods
      
@@ -712,6 +721,7 @@
      the hierarchy. But because they don’t have instance variables
      (only instances do), they inherit only methods.
      */
+    
     
     /**
      Overriding One Method with Another
@@ -750,6 +760,7 @@
      compiler will complain.
      */
     
+    
     /**
      Abstract Classes
      
@@ -783,6 +794,7 @@
      automatically with other objects.
      */
     
+    
     /**
      Class Types
      
@@ -799,6 +811,7 @@
      int i = sizeof(Rectangle);
      =========================================================
      */
+    
     
     /**
      Static Typing
@@ -850,6 +863,7 @@
      and its benefits.
      */
     
+    
     /**
      Type Introspection
      
@@ -883,6 +897,7 @@
      See NSObject Class Reference for more on isKindOfClass:,
      isMemberOfClass:, and related methods.
      */
+    
     
     /**
      Class Objects
@@ -959,6 +974,7 @@
      internally by the runtime system.
      */
     
+    
     /**
      Creating Instances
 
@@ -997,6 +1013,7 @@
      example, is a method that might initialize a new Rectangle
      instance), but every initialization method begins with “init”.
      */
+    
     
     /**
      Customization with Class Objects
@@ -1068,6 +1085,7 @@
      be passed in messages and assigned to variables.
      */
     
+    
     /**
      Variables and Class Objects
      
@@ -1133,6 +1151,7 @@
      data into separate objects.
      */
     
+    
     /**
      Initializing a Class Object
      
@@ -1188,6 +1207,7 @@
      implementation of the initialize method, you must not
      send the initialize message to its superclass.
      */
+    
     
     /**
      Methods of the Root Class

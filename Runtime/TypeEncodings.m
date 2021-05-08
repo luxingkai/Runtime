@@ -19,6 +19,11 @@
     // Do any additional setup after loading the view.
     
     
+    char *invocation = @encode(NSInvocation);
+    printf("%s\n",invocation);
+    char *arry = @encode(NSArray);
+    printf("%s",arry);
+    
     /*
      To assist the runtime system, the compiler encodes the
      argument types and return for each method in a character
@@ -96,8 +101,9 @@
      */
     
     
-    char *buf1 = @encode(long long);
-    printf("%s",buf1);
+//    char *buf1 = @encode(long long);
+//    printf("%s",buf1);
+
     
     
     

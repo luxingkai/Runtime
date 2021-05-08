@@ -7,7 +7,7 @@
 //
 
 #import "MessageForwarding.h"
-
+#import <objc/runtime.h>
 @interface MessageForwarding ()
 
 @end
@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.view.backgroundColor = UIColor.whiteColor;
     
     /*
      Sending a message to an object that does not handle that
@@ -26,8 +27,9 @@
      chance to handle the message.
      */
     
-//    NSMethodSignature *methodSigature = [self methodSignatureForSelector:@selector(known)];
-    
+    //    NSMethodSignature *methodSigature = [self methodSignatureForSelector:@selector(known)];
+    //    [self performSelector:@selector(performMethod)];
+    [self doesNotRecognizeSelector:@selector(performMethod)];
     
     
     /**
@@ -69,9 +71,9 @@
      
      - (id) negotiate
      {
-        if ([someOtherObject respondsTo:@selector(negotiate)])
-            return [someOtherObject negotiate];
-        return self;
+     if ([someOtherObject respondsTo:@selector(negotiate)])
+     return [someOtherObject negotiate];
+     return self;
      }
      
      This way of doing things could get a litter cumbersome, especially
@@ -104,10 +106,10 @@
      The message can be sent with the invokeWithTarget:method:
      - (void)formardInvocation:(NSInvocation *)anInvocation
      {
-        if([someOtherObject respondsToSelector:[anInvocation selector]])
-            [anInvocation invokeWithTarget:someOtherObject];
-        else
-            [super forwardInvocation:anInvocation];
+     if([someOtherObject respondsToSelector:[anInvocation selector]])
+     [anInvocation invokeWithTarget:someOtherObject];
+     else
+     [super forwardInvocation:anInvocation];
      }
      
      The return value of the message that's forwarded is returned
@@ -136,15 +138,17 @@
      NSInvocation class specification in the Foundation framework reference.
      */
     
+    
+    
     /**
      Forwarding and Multiple Inheritance
-
+     
      Forwarding mimics inheritance, and can be used to lend some
      of the effects of multiple inheritance to Objective-C programs.
      As shown in Figure 5-1, an object that responds to a message
      by forwarding it appears to borrow or “inherit” a method
      implementation defined in another class.
-
+     
      file:///Users/tigerfly/Desktop/Runtime/Runtime/forwarding.gif
      
      In this illustration, an instance of the Warrior class forwards
@@ -153,13 +157,13 @@
      seem to respond to the negotiate message, and for all practical
      purposes it does respond (although it’s really a Diplomat
      that’s doing the work).
-
+     
      The object that forwards a message thus “inherits” methods
      from two branches of the inheritance hierarchy—its own branch
      and that of the object that responds to the message. In the
      example above, it appears as if the Warrior class inherits
      from Diplomat as well as its own superclass.
-
+     
      Forwarding provides most of the features that you typically
      want from multiple inheritance. However, there’s an important
      difference between the two: Multiple inheritance combines
@@ -171,6 +175,7 @@
      */
     
     
+    
     /**
      Surrogate Objects
      
@@ -178,7 +183,7 @@
      it possible to develop lightweight objects that represent
      or “cover” more substantial objects. The surrogate stands in
      for the other object and funnels messages to it.
-
+     
      The proxy discussed in “Remote Messaging” in The Objective-C
      Programming Language is such a surrogate. A proxy takes care
      of the administrative details of forwarding messages to a
@@ -188,7 +193,7 @@
      of the remote object but simply gives the remote object a local
      address, a place where it can receive messages in another
      application.
-
+     
      Other kinds of surrogate objects are also possible. Suppose,
      for example, that you have an object that manipulates a lot
      of data—perhaps it creates a complicated image or reads the
@@ -198,7 +203,7 @@
      At the same time, you need at least a placeholder for this
      object in order for the other objects in the application to
      function properly.
-
+     
      In this circumstance, you could initially create, not the
      full-fledged object, but a lightweight surrogate for it.
      This object could do some things on its own, such as answer
@@ -210,8 +215,8 @@
      it if it didn’t. All messages for the larger object go through
      the surrogate, so, as far as the rest of the program is concerned,
      the surrogate and the larger object would be the same.
-
      */
+    
     
     
     /**
@@ -229,7 +234,7 @@
      the answer is NO, even though it can receive negotiate messages
      without error and respond to them, in a sense, by forwarding
      them to a Diplomat. (See Figure 5-1.)
-
+     
      In many cases, NO is the right answer. But it may not be.
      If you use forwarding to set up a surrogate object or to
      extend the capabilities of a class, the forwarding mechanism
@@ -241,14 +246,14 @@
      
      - (BOOL)respondsToSelector:(SEL)aSelector
      {
-         if ( [super respondsToSelector:aSelector] )
-             return YES;
-         else {
-             // Here, test whether the aSelector message can
-                be forwarded to another object and whether that
-                object can respond to it. Return YES if it can.
-         }
-         return NO;
+        if ( [super respondsToSelector:aSelector] )
+            return YES;
+        else {
+        // Here, test whether the aSelector message can
+        be forwarded to another object and whether that
+        object can respond to it. Return YES if it can.
+        }
+        return NO;
      }
      
      In addition to respondsToSelector: and isKindOfClass:, the
@@ -264,18 +269,18 @@
      
      - (NSMethodSignature*)methodSignatureForSelector:(SEL)selector
      {
-         NSMethodSignature* signature = [super methodSignatureForSelector:selector];
-         if (!signature) {
-            signature = [surrogate methodSignatureForSelector:selector];
-         }
-         return signature;
+        NSMethodSignature* signature = [super methodSignatureForSelector:selector];
+        if (!signature) {
+        signature = [surrogate methodSignatureForSelector:selector];
+        }
+        return signature;
      }
      
      
      You might consider putting the forwarding algorithm somewhere
      in private code and have all these methods, forwardInvocation:
      included, call it.
-
+     
      Note:  This is an advanced technique, suitable only for
      situations where no other solution is possible. It is not
      intended as a replacement for inheritance. If you must make
@@ -289,28 +294,24 @@
      NSInvocation class specification in the Foundation framework
      reference.
      */
-
     
-    
-}
-
-
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
     
     
 }
+
+
 
 
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

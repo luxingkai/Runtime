@@ -8,15 +8,28 @@
 
 #import "KeyValueCoding.h"
 
-@implementation Snower
-
+@implementation Snower {
+    
+}
+//@dynamic name;
 - (instancetype)init {
     self = [super init];
     if (self == nil) {return nil;}
-    _name = @"mean";
     return self;
 }
+
+- (void)setName:(NSString *)name {
+//    self.name = name;
+}
+
+- (NSString *)name {
+    return @"";
+}
+
 @end
+
+
+
 
 @interface KeyValueCoding ()
 
@@ -27,6 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     
     /*
      A mechanism by which you can access the properties of an
@@ -43,7 +57,7 @@
      normally implemented by objects (or to access instance
      variables directly if need be).
      */
-    Snower *snower = [Snower new];
+    
     
     /**
      Getting Values
@@ -59,6 +73,7 @@
 //    [snower mutableOrderedSetValueForKey:@""];
 //    [snower mutableOrderedSetValueForKeyPath:@""];
     
+    
     /**
      Setting Values
      */
@@ -68,10 +83,12 @@
 //    [snower setValue:@"" forKeyPath:@""];
 //    [snower setValue:@"" forUndefinedKey:@""];
     
+    
     /**
      Changing Default Behavior
      */
 //    snower.accessInstanceVariablesDirectly
+    
     
     /**
      Validation
@@ -79,6 +96,14 @@
 //    [snower validateValue:@"" forKey:@"" error:nil];
 //    [snower validateValue:@"" forKeyPath:@"" error:nil];
     
+    
+    
+    Snower *snower = [Snower new];
+//    [snower setValue:@"sdf" forKey:@"name"];
+    [snower setValue:@"sdf" forKeyPath:@"name"];
+    [snower valueForKey:@"name"];
+    [snower setNilValueForKey:@"name"];
+    [snower setValue:@"" forUndefinedKey:@""];
     
     
 }

@@ -7,6 +7,9 @@
 //
 
 #import "DeclaredProperties.h"
+#import <objc/runtime.h>
+#import <objc/objc.h>
+#import <objc/message.h>
 
 @interface DeclaredProperties ()
 
@@ -31,6 +34,18 @@
      declared properties is available for each class and protocol.
      */
     
+//    Protocol *protocol = @protocol(NSObject);
+//    unsigned int outCount;
+//    objc_property_t *properties = class_copyPropertyList([NSObject class], &outCount);
+////    objc_property_t *protocol_properties = protocol_copyPropertyList(protocol, &outCount);
+//    for (int i = 0; i < outCount; i ++) {
+//        objc_property_t property = properties[i];
+//        const char *property_name = property_getName(property);
+//        const char *property_attributes = property_getAttributes(property);
+//        printf("%s\n",property_name);
+//    }
+    
+    
     
     /**
      Property Type and Functions
@@ -50,9 +65,9 @@
      ----------------------------------------------------
 
      For example, given the following class declaration:
-
+     
      @interface Lender : NSObject {
-         float alone;
+     float alone;
      }
      @property float alone;
      @end
@@ -97,8 +112,9 @@
      property_getAttributes(property));
      }
      ----------------------------------------------------
-     
      */
+    
+    
     
     /**
      Property Type String
@@ -114,8 +130,9 @@
      separated by commas:
 
      file:///Users/tigerfly/Desktop/Runtime/Runtime/propertyTypeEncoding.png
-     
      */
+    
+    
     
     /**
      Property Attribute Description Examples
@@ -131,8 +148,25 @@
      the corresponding string returned by property_getAttributes:
 
      file:///Users/tigerfly/Desktop/Runtime/Runtime/PropertyAttributeDescriptionExamples.png
-
      */
+    
+
+//    id class = objc_getClass("NSObject");
+//    unsigned int stackOutCount;
+//    objc_property_t *stack_properties = class_copyPropertyList(class, &stackOutCount);
+//    for (int i = 0; i < stackOutCount; i ++) {
+//        objc_property_t propertory = stack_properties[i];
+//        const char *name = property_getName(propertory);
+//        const char *attribute = property_getAttributes(propertory);
+//        printf("%s %s\n",name,attribute);
+//    }
+    
+    
+    
+    
+    
+    
+    
 }
 
 /*

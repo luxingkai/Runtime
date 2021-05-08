@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *content;
 
-- (void)resolveThisMethodDynamically;
+//- (void)resolveThisMethodDynamically;
 @end
 
 NS_ASSUME_NONNULL_END

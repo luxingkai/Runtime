@@ -7,25 +7,61 @@
 //
 
 #import "DynamicMethodResolution.h"
-#include <objc/objc.h>
+#import <objc/objc.h>
 #import <objc/runtime.h>
-@interface DynamicMethodResolution ()
+
+@interface SDFactory : NSObject
+@end
+
+@implementation SDFactory
+
+void dynamicMethodIMP(id self, SEL __cmd) {
+   //implementation...
+    NSLog(@" 动态方法添加和实现");
+}
+
++ (BOOL)resolveClassMethod:(SEL)sel {
+    return [super resolveClassMethod:sel];
+}
+
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    if(sel == @selector(resolveThisMethodDynamically)) {
+        class_addMethod([self class], sel, (IMP)dynamicMethodIMP, "v@:");
+        return YES;
+    }
+    return [super resolveInstanceMethod:sel];
+}
 
 @end
 
-@implementation DynamicMethodResolution
-//@dynamic content;
-@synthesize content = _content;
 
+
+
+@interface DynamicMethodResolution ()
+@end
+
+@implementation DynamicMethodResolution
+@dynamic content;
+//@synthesize content = _content;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    SDFactory *factory = [SDFactory new];
+    
+    [SDFactory resolveInstanceMethod:@selector(resolveThisMethodDynamically)];
+    [factory performSelector:@selector(resolveThisMethodDynamically)];
+    
+    
     /*
      This chapter describes how you can provide an implementation
      of a method dynamically.
      */
+    
+//    SEL sel = @selector(asdf);
+//    IMP imp = void(*performMethod)(self,sel);
+    
     
     /**
      Dynamic Method Resolution
@@ -80,6 +116,7 @@
     
     
     
+    
     /**
      Dynamic Loading
      
@@ -113,27 +150,28 @@
      */
         
     
+    
 
     
 }
 
-void dynamicMethodIMP(id self, SEL __cmd) {
-   //implementation...
-    
-}
-
-+ (BOOL)resolveInstanceMethod:(SEL)aSEL {
-    if(aSEL == @selector(viewDidLoad)) {
-       class_addMethod([self class], aSEL, (IMP)dynamicMethodIMP, "v@:");
-       return YES;
-   }
-   return [super resolveInstanceMethod:aSEL];
-}
-
-+ (BOOL)resolveClassMethod:(SEL)sel {
-    
-    return YES;
-}
+//void dynamicMethodIMP(id self, SEL __cmd) {
+//   //implementation...
+//
+//}
+//
+//+ (BOOL)resolveInstanceMethod:(SEL)aSEL {
+//    if(aSEL == @selector(viewDidLoad)) {
+//       class_addMethod([self class], aSEL, (IMP)dynamicMethodIMP, "v@:");
+//       return YES;
+//   }
+//   return [super resolveInstanceMethod:aSEL];
+//}
+//
+//+ (BOOL)resolveClassMethod:(SEL)sel {
+//
+//    return YES;
+//}
                        
 
 

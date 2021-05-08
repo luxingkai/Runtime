@@ -80,10 +80,10 @@
      */
     
     
-#pragma mark --     Methods for others to implement
+    
+#pragma mark --  Methods for others to implement
 
     /*
-     
      If you know the class of an object, you can look at its
      interface declaration (and the interface declarations
      of the classes it inherit from) to find what messages
@@ -257,6 +257,7 @@
      */
     
     
+    
 #pragma mark -- Formal Protocols
 
     /**
@@ -289,6 +290,7 @@
      Unlike class names, protocol names don’t have global
      visibility. They live in their own namespace.
     */
+    
     
     /**
      Optional Protocol Methods
@@ -552,6 +554,7 @@
      */
     
     
+    
 #pragma mark -- Protocols Within Protocols
 
     /**
@@ -623,6 +626,7 @@
      */
     
 
+    
 #pragma mark -- Referring to Other Protocols
 
     /**

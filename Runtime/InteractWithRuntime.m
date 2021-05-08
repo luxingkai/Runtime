@@ -10,6 +10,7 @@
 
 @interface InteractWithRuntime ()
 
+@property (nonatomic, strong) NSString *str;
 @end
 
 @implementation InteractWithRuntime
@@ -27,6 +28,7 @@
      •  through direct calls to runtime functions
      */
     
+    
     /**
      Objective-C Source Code
      
@@ -43,6 +45,7 @@
      templates, and other information distilled from source-code message
      expressions.
      */
+    
     
     /**
      NSObject Methods
@@ -79,8 +82,9 @@
      the ability to introspect about itself.
      */
     
-    NSObject *car = [NSObject new];
-    NSLog(@"%@",car.debugDescription);
+    
+    
+
     
     /**
      Runtime Functions

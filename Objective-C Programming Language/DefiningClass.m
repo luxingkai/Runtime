@@ -35,6 +35,8 @@
      one. Categories are described in Categories and Extensions.
      */
     
+        
+    
 #pragma mark -- Source Files
     
     /*
@@ -209,6 +211,7 @@
      precomp instead.
      */
     
+    
     /**
      Referring to Other Classes
      
@@ -257,6 +260,7 @@
      two interface files import each other, neither class
      may compile correctly.
      */
+    
     
     /**
      The Role of the Interface
@@ -410,6 +414,7 @@
      ====================================================
      */
     
+    
     /**
      The Scope of Instance Variables
      
@@ -546,6 +551,7 @@
      */
     
     
+    
 #pragma mark -- Messages to self and super
 
     /*
@@ -609,6 +615,7 @@
      sending the message to super—rather than to the class of
      the object receiving the message.
      */
+    
     
     /**
      An Example: Using self and super
@@ -687,6 +694,7 @@
      would take a direct message to a Mid instance to do so.
      */
 
+    
     /**
      Using super
      
@@ -734,6 +742,7 @@
      (a rare case), it can still get the basic functionality
      by sending a message to super.
      */
+    
     
     /**
      Redefining self
@@ -796,6 +805,8 @@
      See Creating and Initializing Objects for more information
      about implementing initializer and related methods.
      */
+    
+    
     
 }
 

@@ -53,7 +53,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ExceptionHandling *vc = [ExceptionHandling new];
+    DynamicMethodResolution *vc = [DynamicMethodResolution new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     

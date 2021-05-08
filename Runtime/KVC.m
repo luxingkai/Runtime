@@ -86,6 +86,7 @@
      coding can also help to simplify your code in some cases.
      */
     
+    
     /**
      Using Key-value Coding Compliant Objects
      
@@ -129,6 +130,7 @@
      the hierarchy using a single call.
      */
     
+    
     /**
      Adopting Key-Value Coding for an Object
      
@@ -151,6 +153,7 @@
      cases.
      */
     
+    
     /**
      Key-Value Coding with Swift
      
@@ -171,6 +174,7 @@
      coding is often most useful. Situations that call for a significantly
      different approach in Swift are noted throughout the guide.
      */
+    
     
     /**
      Other Cocoa Technologies Rely on Key-Value Coding
@@ -1738,6 +1742,9 @@
 //    Transaction *transaction = [Transaction new];
 //    transaction.date = date;
 //    NSLog(@"%@",date);
+    
+    
+    
     
 }
 
