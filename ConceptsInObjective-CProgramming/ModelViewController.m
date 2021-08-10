@@ -409,7 +409,6 @@
      
      Figure 7-3  Coordinating controller as the owner of a nib file
      file:///Users/tigerfly/Desktop/Runtime/ConceptsInObjective-CProgramming/cocoa_mvc_coord.gif
-     
      */
     
     
@@ -492,6 +491,7 @@
         as File's Owner.
      */
     
+    
 #pragma mark -- Model-View-Controller in Cocoa (OS X)
 
     /*
@@ -548,6 +548,8 @@
         menu items, or you might have them undo selections in a
         text view.
      */
+    
+    
     
     
 }

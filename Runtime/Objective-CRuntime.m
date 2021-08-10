@@ -7,9 +7,9 @@
 //
 
 #import "Objective-CRuntime.h"
-
+#import <objc/runtime.h>
 @interface Objective_CRuntime ()
-
+@property (nonatomic, strong) NSObject *destory;
 @end
 
 @implementation Objective_CRuntime
@@ -424,6 +424,9 @@
      All char * in the runtime API should be considered to have UTF-8 encoding.
      */
     
+    
+    const char* name = class_getName([self class]);
+    
     /**
      Working with Classes
      
@@ -526,6 +529,131 @@
      Used by CoreFoundation's toll-free bridging.
      */
     
+    /**
+     Adding Classes
+     
+     objc_allocateClassPair
+     create a new class and metaclass.
+     
+     objc_disposeClassPair
+     Destroys a class and its associated metaclass.
+     
+     objc_registerClassPair
+     Registers a class that was allocated using objc_allocateClassPair(_:_:_:).
+
+     objc_duplicateClass
+     Used by Foundation's Key-Value Observing.
+     */
+    
+    /**
+     Working with Instances
+     
+     object_getIndexedIvars
+     Returns a pointer to any extra bytes allocated with a instance given
+     object.
+     
+     object_getIvar
+     Reads the value of an instance variable in an object.
+     
+     object_setIvar
+     Sets the value of an instance variable in an object.
+     
+     object_getClassName
+     Returns the class name of a given object.
+     
+     object_getClass
+     Return the class of an object
+     
+     object_setClass
+     Sets the class of an object.
+     */
+
+    /**
+     Obtaining Class Definitions
+     
+     objc_getClassList
+     obtains the list of registered class definitions.
+     
+     objc_copyClassList
+     Creates and returns a list of pointers to all registered class
+     definitions.
+     
+     objc_lookUpClass
+     Returns the class definitions of a specified class.
+     
+     objc_getClass
+     Returns the class definitions of a specified class.
+     
+     objc_getRequiredClass
+     Returns the class definition of a specified class.
+     
+     objc_getMetaClass
+     Returns the metaclass definition of a specified class.
+     */
+    
+    /**
+     Working with Instance Variables
+     
+     ivar_getName
+     Returns the name of an instance variable.
+     
+     ivar_getTypeEncoding
+     Returns the type string of an instance variable.
+     
+     ivar_getOffset
+     Returns the offset of an instance variable.
+     */
+    
+    /**
+     Associative References
+     
+     objc_setAssociatedObject
+     Sets an associated value for a given object using a given key
+     and association policy,
+     
+     objc_getAssociatedObject
+     Returns the value associated with a given object for a given key.
+     
+     objc_removeAssociatedObjects
+     Removes all associations for a given object.
+     */
+    
+    /**
+     Working with Methods
+     
+     method_getName
+     Returns the name of a method.
+     
+     method_getImplementation
+     Returns the implementation of a method.
+     
+     method_getTypeEncoding
+     Returns a string describing a method's parameter and return types.
+     
+     method_copyReturnType
+     Returns a string describing a method's return type.
+     
+     method_copyArgumentType
+     Returns a string describing a single parameter type of a method.
+     
+     method_getReturnType
+     Returns by reference a string describing a method's return type.
+     
+     method_geteNumberOfArguments
+     Returns the number of arguments accepted by a method.
+     
+     method_getDescription
+     Returns a method description structure for a specified method.
+     
+     method_setImplementation
+     Sets the implementation of a method.
+     
+     method_exchangeImplementations
+     Exchanges the implementations of two methods.
+     */
+    
+        
+    
     
     /**
      Class-Definition Data Structures
@@ -561,6 +689,9 @@
      objc_property_attribute_t
      Defines a property attribute.
      */
+    
+    
+    
     
     
     

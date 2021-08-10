@@ -7,7 +7,7 @@
 //
 
 #import "AssociativeReferences.h"
-
+#import <objc/runtime.h>
 @interface AssociativeReferences ()
 
 @end
@@ -89,6 +89,22 @@
      for example, log the value of overview, you generate
      a runtime exception.
      */
+    
+    static char overviewKey;
+     
+    NSArray *array =
+        [[NSArray alloc] initWithObjects:@"One", @"Two", @"Three", nil];
+    // For the purposes of illustration, use initWithFormat: to ensure
+    // the string can be deallocated
+    NSString *overview =
+        [[NSString alloc] initWithFormat:@"%@", @"First three numbers"];
+     
+    objc_setAssociatedObject (
+        array,
+        &overviewKey,
+        overview,
+        OBJC_ASSOCIATION_RETAIN
+    );
     
     
 #pragma mark -- Retrieving Associated Objects

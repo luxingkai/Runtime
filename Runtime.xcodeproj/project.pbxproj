@@ -79,6 +79,7 @@
 		119E09E424444ECD003FB6F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09E324444ECD003FB6F2 /* main.m */; };
 		119E09EE24444ECD003FB6F2 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09ED24444ECD003FB6F2 /* RuntimeTests.m */; };
 		119E09F924444ECD003FB6F2 /* RuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E09F824444ECD003FB6F2 /* RuntimeUITests.m */; };
+		119E15F2265CE3F20067C50A /* AdSupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E15F1265CE3F20067C50A /* AdSupportViewController.m */; };
 		11C8C39D258DEC8900C5DD64 /* Objective-CRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C39C258DEC8900C5DD64 /* Objective-CRuntime.m */; };
 		11D97F5B25622FB500781528 /* Messaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F5A25622FB500781528 /* Messaging.m */; };
 		11D97F5E25622FEC00781528 /* DynamicMethodResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97F5D25622FEC00781528 /* DynamicMethodResolution.m */; };
@@ -235,6 +236,8 @@
 		119E09F424444ECD003FB6F2 /* RuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119E09F824444ECD003FB6F2 /* RuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUITests.m; sourceTree = "<group>"; };
 		119E09FA24444ECD003FB6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119E15F0265CE3F20067C50A /* AdSupportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdSupportViewController.h; sourceTree = "<group>"; };
+		119E15F1265CE3F20067C50A /* AdSupportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdSupportViewController.m; sourceTree = "<group>"; };
 		11C8C39B258DEC8900C5DD64 /* Objective-CRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CRuntime.h"; sourceTree = "<group>"; };
 		11C8C39C258DEC8900C5DD64 /* Objective-CRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Objective-CRuntime.m"; sourceTree = "<group>"; };
 		11D97F5925622FB500781528 /* Messaging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Messaging.h; sourceTree = "<group>"; };
@@ -396,6 +399,7 @@
 		119E09C524444ECB003FB6F2 = {
 			isa = PBXGroup;
 			children = (
+				119E15EF265CE3CA0067C50A /* AdSupport */,
 				1181E49E257CB0010079C79D /* ConceptsInObjective-CProgramming */,
 				113D0FA025789284004964F2 /* Objective-C Programming Language */,
 				11479CB2256CA50000AF877E /* Framework */,
@@ -502,6 +506,15 @@
 				119E09FA24444ECD003FB6F2 /* Info.plist */,
 			);
 			path = RuntimeUITests;
+			sourceTree = "<group>";
+		};
+		119E15EF265CE3CA0067C50A /* AdSupport */ = {
+			isa = PBXGroup;
+			children = (
+				119E15F0265CE3F20067C50A /* AdSupportViewController.h */,
+				119E15F1265CE3F20067C50A /* AdSupportViewController.m */,
+			);
+			path = AdSupport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -699,6 +712,7 @@
 				1181E4BF257CB10D0079C79D /* ReceptionistPattern.m in Sources */,
 				11C8C39D258DEC8900C5DD64 /* Objective-CRuntime.m in Sources */,
 				11D97F642562301700781528 /* TypeEncodings.m in Sources */,
+				119E15F2265CE3F20067C50A /* AdSupportViewController.m in Sources */,
 				1181E4C5257CB13E0079C79D /* Toll-Free Bridging.m in Sources */,
 				1148E58F256761340002372F /* KVC.m in Sources */,
 				1181E4B6257CB0B90079C79D /* ObjectModeling.m in Sources */,

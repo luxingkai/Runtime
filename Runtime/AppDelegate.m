@@ -20,6 +20,8 @@
 #import "KVC.h"
 #import "Objective-CRuntime.h"
 #import "ExceptionHandling.h"
+#import "AssociativeReferences.h"
+#import "AdSupportViewController.h"
 
 //Runtime 官方文档
 //https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048-CH1-SW1
@@ -53,7 +55,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    DynamicMethodResolution *vc = [DynamicMethodResolution new];
+    AdSupportViewController *vc = [AdSupportViewController new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     

@@ -77,9 +77,10 @@
      
      Users of this hierarchy see only one public class, Number, so how
      is it possible to allocate instances of the proper subclass?
-     THe answer is in the way the abstract superclass handles instantiation.
+     The answer is in the way the abstract superclass handles instantiation.
      */
     
+     
     
     
 #pragma mark -- Creating Instances
@@ -135,15 +136,11 @@
      Class cluster
      Public superclasses
      NSData
-     NSData
      NSMutableData
-     NSArray
      NSArray
      NSMutableArray
      NSDictionary
-     NSDictionary
      NSMutableDictionary
-     NSString
      NSString
      NSMutableString
 
@@ -274,6 +271,7 @@
      init.
      */
     
+    
     /**
      True Subclasses: An Example
         
@@ -349,6 +347,8 @@
      work without problems for MonthArray objects.
      */
     
+    
+    
     /**
      A composite Object
      
@@ -382,6 +382,8 @@
      However, your object could put code for its own purposes in the
      implementation of any method it overrides.
      */
+    
+    
     
     /**
      A composite Object: An Example
@@ -485,8 +487,9 @@
          }
      }
      ================================================
-     
      */
+    
+    
     
     
     
